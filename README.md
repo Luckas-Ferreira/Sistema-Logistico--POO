@@ -24,7 +24,7 @@
 - [ ] Autenticar Trabalhador
 
 Features Futuras
-- [X] Cadastro de cliente
+- [F] Cadastro de cliente
 - [X] Cadastro de produtos
 - [X] Pesquisar de produtos
 - [X] ver todos os produtos
