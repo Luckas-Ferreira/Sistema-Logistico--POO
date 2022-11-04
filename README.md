@@ -33,29 +33,29 @@ Features Futuras
 
 ### Demonstrações
 <h1 align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="Demonstração/0.png" />
+  Em Breve!
 </h1>
 
 ### Pré-requisitos
 
 -Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Python](https://www.python.org). 
+[Git](https://git-scm.com), [Java](https://www.java.com/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Sistema Logístico
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/Luckas-Ferreira/Projeto-Criando-um-mercado-ED.git>
+$ git clone <https://github.com/Luckas-Ferreira/Sistema-Logistico--POO>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd Projeto-Criando-um-mercado-ED
+$ cd Sistema-Logistico--POO
 
 # Abra o Visual Code
 $ code .
 
 # Execulte o arquivo
-$ SistemaPrincipal.py
+$ Main.java
 ```
 #
 
@@ -63,7 +63,7 @@ $ SistemaPrincipal.py
 
 A seguinte ferramenta foi usada na construção do projeto:
 
-- [Python](https://www.python.org)
+- [Java](https://www.java.com/)
 
 ### Autores
 ---
