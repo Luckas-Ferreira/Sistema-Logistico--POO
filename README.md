@@ -24,12 +24,12 @@
 - [ ] Autenticar Trabalhador
 
 Features Futuras
-- [F] Cadastro de cliente
-- [X] Cadastro de produtos
-- [X] Pesquisar de produtos
-- [X] ver todos os produtos
-- [X] Remoção de produtos
-- [X]Compra de produtos
+- [ ] Cadastro de cliente
+- [ ] Cadastro de produtos
+- [ ] Pesquisar de produtos
+- [ ] ver todos os produtos
+- [ ] Remoção de produtos
+- [ ] Compra de produtos
 
 ### Demonstrações
 <h1 align="center">
