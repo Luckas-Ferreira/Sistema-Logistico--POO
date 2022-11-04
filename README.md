@@ -16,15 +16,20 @@
 #
 
 
-### Features
+### Features - Andamento
+- [ ] Tela Inicial
+- [ ] Tela Cliente
+- [ ] Tela Trabalhador
+- [ ] Cadastrar Trabalhador
+- [ ] Autenticar Trabalhador
 
-- [ ] Cadastro de usuário
-- [ ] Cadastro de cliente
-- [ ] Cadastro de produtos
-- [ ] Pesquisar de produtos
-- [ ] ver todos os produtos
-- [ ] Remoção de produtos
-- [ ] Compra de produtos
+Features Futuras
+- [X] Cadastro de cliente
+- [X] Cadastro de produtos
+- [X] Pesquisar de produtos
+- [X] ver todos os produtos
+- [X] Remoção de produtos
+- [X]Compra de produtos
 
 ### Demonstrações
 <h1 align="center">
