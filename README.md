@@ -10,7 +10,7 @@
 </p>
 
 <h4 align="center"> 
-	🚧  Sistema Logístico com Tabela Hash 🚀 Em construção...  🚧
+	🚧  Sistema Logístico usando Programação Orientada a Objetos - POO 🚀 Em construção...  🚧
 </h4>
 
 #
@@ -73,11 +73,5 @@ A seguinte ferramenta foi usada na construção do projeto:
   <a href="https://www.linkedin.com/in/luckas-ferreira-49a7a219b/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
  
  
- <a href="https://github.com/FlavioHenriqueNL">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/32113255?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Flávio Henrique Nunes Leite</b></sub></a> <a href="https://github.com/FlavioHenriqueNL" title="Sistema Logístico">🚀</a>
 
  ---
-
-### _Nós ajude a implementar o resto das Features. Desde já agradeço!_ 😀.
