@@ -1,4 +1,4 @@
-public class Funcionario extends Base{
+public class TelaFuncionario extends Base{
 
     @Override
     protected void adicionarProduto() {
