@@ -1,20 +1,20 @@
-public class Funcionario extends Base{
+public class Cliente extends Base{
 
     @Override
     protected void adicionarProduto() {
-        System.out.println("[ A ] Adicionar um produto  [ A ]");
+        // TODO Auto-generated method stub
         
     }
 
     @Override
     protected void removerProduto() {
-        System.out.println("[ R ]  Remover um produto   [ R ]");
+        // TODO Auto-generated method stub
         
     }
 
     @Override
     protected void comprarProduto() {
-        // TODO Auto-generated method stub
+        System.out.println("[ C ]  Comprar um produto   [ C ]");
         
     }
     
