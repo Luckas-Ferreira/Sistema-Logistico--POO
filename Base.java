@@ -10,6 +10,7 @@ public abstract class Base {
         sair();
     }
     
+    
     protected abstract void adicionarProduto();
     protected abstract void removerProduto();
     protected abstract void comprarProduto();
