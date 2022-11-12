@@ -1,7 +1,7 @@
 public class TelaFuncionario extends Base{
 
     @Override
-    protected void adicionarProduto() {
+    protected void comprarAdicionar() {
         System.out.println("[ A ] Adicionar um produto  [ A ]");
         
     }
@@ -12,10 +12,4 @@ public class TelaFuncionario extends Base{
         
     }
 
-    @Override
-    protected void comprarProduto() {
-        // TODO Auto-generated method stub
-        
-    }
-    
 }

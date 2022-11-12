@@ -1,9 +1,8 @@
 public abstract class Base {
     public void opcoes(){
         System.out.println("\n\n\tTELA DO FUNCIONARIO\n");
-        adicionarProduto();
+        comprarAdicionar();
         removerProduto();
-        comprarProduto();
         verTodosProduto();
         pesquisarProtuto();
         voltar();
@@ -11,9 +10,8 @@ public abstract class Base {
     }
     
     
-    protected abstract void adicionarProduto();
+    protected abstract void comprarAdicionar();
     protected abstract void removerProduto();
-    protected abstract void comprarProduto();
     private void verTodosProduto(){
         System.out.println("[ T ] Ver todos os produtos [ T ]");
     }
