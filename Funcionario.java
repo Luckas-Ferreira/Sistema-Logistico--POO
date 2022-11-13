@@ -2,13 +2,14 @@ import java.util.Scanner;
 public class Funcionario {
     protected String usuario;
     protected String senha;
-    protected boolean admin;
+    protected String admin;
     
-    public boolean isAdmin() {
+    
+    public String getAdmin() {
         return admin;
     }
 
-    public void setAdmin(boolean admin) {
+    public void setAdmin(String admin) {
         this.admin = admin;
     }
     Scanner login = new Scanner(System.in);
@@ -17,8 +18,8 @@ public class Funcionario {
         this.usuario = login.next();
         System.out.print("Senha: ");
         this.senha = login.next();
-        System.out.println("Este usuario é Admin?");
-        this.admin = login.nextBoolean();
+        System.out.print("Este usuario é Admin?");
+        this.admin = login.next();
     }
     
     public String getSenha() {

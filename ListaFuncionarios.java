@@ -10,10 +10,9 @@ public class ListaFuncionarios {
     }
     
     public void fazerLogin(){
-        
         for (Funcionario funcionario : listaFuncionario){
             System.out.println(funcionario);
-            if (funcionario.isAdmin()){
+            if (funcionario.getAdmin().equals("sim")){
                 System.out.println("Login aprovado");
                 //Chamar a função TelaFuncionario
             }else{
@@ -23,12 +22,12 @@ public class ListaFuncionarios {
                 String resp = resposta.next();
                 resposta.close();
                 if(resp == "sim"){
-                    funcionario.setAdmin(true);
+                    funcionario.setAdmin("sim");
                     fazerLogin();
+                    
                 }else{
                     //Voltar para tela inicial
                 }
-                
             }
         
         }
