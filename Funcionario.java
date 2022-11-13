@@ -1,7 +1,4 @@
-public class Funcionario implements Autenticador{
-    public String teste(){
-        return "Login Aprovado";
-    }
+public class Funcionario{
     private String usuario;
     private String senha;
 
@@ -10,12 +7,20 @@ public class Funcionario implements Autenticador{
         this.senha = senha;
     }
 
-    @Override
-    public String verificar() {
-        if (usuario.equals(usuario) && senha.equals(senha)){
-            return teste();
-        }
-        return "Login Invalido";
+    public String getUsuario() {
+        return usuario;
     }
-    
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
 }
