@@ -1,5 +1,5 @@
 public class Login implements Autenticador{
-    Funcionario funcionario;
+    Funcionario funcionario = new Funcionario();
 
     public String verificar(Funcionario funcionario){
         return verificar();
@@ -7,9 +7,9 @@ public class Login implements Autenticador{
     
     @Override
     public String verificar() {
-        /*if (usuario.equals(usuario) && senha.equals(senha)){
+        if (funcionario.getUsuario().equals(usuario) && senha.equals(senha)){
             return teste();
-        }*/
+        }
         return "Login Invalido";
     }   
 }

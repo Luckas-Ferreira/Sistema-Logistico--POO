@@ -2,7 +2,7 @@ public class Funcionario{
     private String usuario;
     private String senha;
 
-    public Funcionario(String usuario, String senha){
+    public Funcionario(){
         this.usuario = usuario;
         this.senha = senha;
     }

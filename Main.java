@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Login login = new Login();
-        Funcionario fu1 = new Funcionario("luckas", "123456");
+        Funcionario fu1 = new Funcionario();
         System.out.println(login.verificar(fu1));
     }
 }
