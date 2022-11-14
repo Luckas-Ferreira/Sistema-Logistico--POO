@@ -1,3 +1,3 @@
 public interface Autenticador {
-    void verificar();
+    void verificar(Funcionario funcionario);
 }
