@@ -20,7 +20,7 @@ public class TelaCliente extends Cliente{
             String decisao = input.next().toUpperCase();
             
             if (decisao.equals("C")){
-                removerAdicionar();
+                adicionarProduto();
                 // Rediriceso para tela de comprar item
             } else if (decisao.equals("T")){
                 verTodosProduto();
