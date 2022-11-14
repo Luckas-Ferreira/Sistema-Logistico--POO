@@ -1,7 +1,12 @@
 public abstract class Base {
     
+<<<<<<< HEAD
     protected abstract void adicionarProduto();
     protected abstract void removerAdicionar();
+=======
+    protected abstract void comprarAdicionar();
+    protected abstract void removerProduto();
+>>>>>>> 27a62c04edcfe8d366d4c8fa04df494969eead5e
 
     public void opcoes(){
         System.out.println("\n\n\tTELA DO CLIENTE\n");
@@ -13,7 +18,11 @@ public abstract class Base {
         sair();
     }
 
+<<<<<<< HEAD
     protected void verTodosProduto(){
+=======
+    private void verTodosProduto(){
+>>>>>>> 27a62c04edcfe8d366d4c8fa04df494969eead5e
         System.out.println("[ T ] Ver todos os produtos [ T ]");
     }
     protected void pesquisarProtuto(){
