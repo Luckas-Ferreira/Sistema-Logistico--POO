@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TelaCliente extends Base{
 
     @Override
@@ -9,6 +11,13 @@ public class TelaCliente extends Base{
     @Override
     protected void removerProduto() {
         
+    }
+
+    protected void opcaoClient(String escolha){
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("");
+
         
     }
     
