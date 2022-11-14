@@ -13,10 +13,17 @@ public class TelaCliente extends Base{
         
     }
 
-    protected void opcaoClient(String escolha){
-        
+    protected void opcaoClient(){
+
         Scanner input = new Scanner(System.in);
-        System.out.println("");
+
+        System.out.print("Escolha o que deseja: ");
+        String decisao = input.next();
+
+        if (decisao.equals("C")){
+            comprarAdicionar();
+            // Rediriceso para tela de comprar item
+        } 
 
         
     }
