@@ -1,20 +1,14 @@
 import java.util.Scanner;
 
-public class TelaCliente extends Base{
+public class TelaCliente extends Cliente{
+    // A tela cliente mostrará as interações que o cliente podera realizar.
+    // *AINDA A DECIDIR SE EXISTIRA UM VERIFICADOR DE CLIENTE*
+     
 
-    public TelaCliente(){
-        System.out.println("\n\n\tTELA DO CLIENTE\n");
-    }
 
-    @Override
-    protected void adicionarProduto() {
-        //Cliente não pode adicionar produto
-    }
-
-    @Override
-    protected void removerAdicionar() {
-        System.out.println("[ C ]    Comprar Produto    [ C ]");
-        
+    public TelaCliente(String nome, int idade, double dinheiro) {
+        super(nome, idade, dinheiro);
+        //TODO Auto-generated constructor stub
     }
 
     protected void opcaoClient(){
