@@ -21,16 +21,20 @@ public class TelaCliente extends Cliente{
             
             if (decisao.equals("C")){
                 adicionarProduto();
-                // Rediriceso para tela de comprar item
+                // Ir para tela de comprar item
             } else if (decisao.equals("T")){
                 verTodosProduto();
+                // Mostrar produtos disponiveis 
             } else if (decisao.equals("P")){
                 pesquisarProtuto();
+                // Pesquisar um produto
             } else if (decisao.equals("V")){
                 voltar();
+                // Retorna a Tela inicial
             } else if (decisao.equals("S")){
                 sair();
                 break;
+                // Sai do mercadinho
             }
 
         }
