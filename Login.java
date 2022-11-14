@@ -34,9 +34,11 @@ public class Login implements Autenticador{
                     else{
                         System.out.println("Login Invalido!");
                         //Mandar para a tela inicial
-                    }    
-                resposta.close();
+                    }
+                }else if (resp.equals("N")){
+                    //Mandar para a tela
                 }
+                resposta.close();
             }
         }        
     }
