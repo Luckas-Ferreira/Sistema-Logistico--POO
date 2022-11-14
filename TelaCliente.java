@@ -17,23 +17,26 @@ public class TelaCliente extends Base{
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Escolha o que deseja: ");
-        String decisao = input.next();
+        while(true){
 
-        if (decisao.equals("C")){
-            comprarAdicionar();
-            // Rediriceso para tela de comprar item
-        } else if (decisao.equals("T")){
-            verTodosProduto();
-        } else if (decisao.equals("P")){
-            pesquisarProtuto();
-        } else if (decisao.equals("V")){
-            voltar();
-        } else if (decisao.equals("S")){
-            sair();
+            System.out.print("Escolha o que deseja: ");
+            String decisao = input.next();
+            
+            if (decisao.equals("C")){
+                comprarAdicionar();
+                // Rediriceso para tela de comprar item
+            } else if (decisao.equals("T")){
+                verTodosProduto();
+            } else if (decisao.equals("P")){
+                pesquisarProtuto();
+            } else if (decisao.equals("V")){
+                voltar();
+            } else if (decisao.equals("S")){
+                sair();
+                break;
+            }
+
         }
-
-        
     }
     
 }
