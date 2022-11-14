@@ -1,4 +1,8 @@
 public abstract class Base {
+    
+    protected abstract void comprarAdicionar();
+    protected abstract void removerProduto();
+
     public void opcoes(){
         System.out.println("\n\n\tTELA DO FUNCIONARIO\n");
         comprarAdicionar();
@@ -8,9 +12,7 @@ public abstract class Base {
         voltar();
         sair();
     }
-    
-    protected abstract void comprarAdicionar();
-    protected abstract void removerProduto();
+
     private void verTodosProduto(){
         System.out.println("[ T ] Ver todos os produtos [ T ]");
     }
