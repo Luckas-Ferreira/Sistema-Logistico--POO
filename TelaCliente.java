@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class TelaCliente extends Base{
 
     @Override
-    protected void comprarAdicionar() {
-        System.out.println("[ C ]    Comprar Produto    [ C ]");
-        
+    protected void adicionarProduto() {
+        //Cliente não pode adicionar produto
     }
 
     @Override
-    protected void removerProduto() {
+    protected void removerAdicionar() {
+        System.out.println("[ C ]    Comprar Produto    [ C ]");
         
     }
 
@@ -20,10 +20,10 @@ public class TelaCliente extends Base{
         while(true){
 
             System.out.print("Escolha o que deseja: ");
-            String decisao = input.next();
+            String decisao = input.next().toUpperCase();
             
             if (decisao.equals("C")){
-                comprarAdicionar();
+                removerAdicionar();
                 // Rediriceso para tela de comprar item
             } else if (decisao.equals("T")){
                 verTodosProduto();

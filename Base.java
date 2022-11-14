@@ -1,12 +1,12 @@
 public abstract class Base {
     
-    protected abstract void comprarAdicionar();
-    protected abstract void removerProduto();
+    protected abstract void adicionarProduto();
+    protected abstract void removerAdicionar();
 
     public void opcoes(){
         System.out.println("\n\n\tTELA DO CLIENTE\n");
-        comprarAdicionar();
-        removerProduto();
+        adicionarProduto();
+        removerAdicionar();
         verTodosProduto();
         pesquisarProtuto();
         voltar();
