@@ -25,6 +25,12 @@ public class TelaCliente extends Base{
             // Rediriceso para tela de comprar item
         } else if (decisao.equals("T")){
             verTodosProduto();
+        } else if (decisao.equals("P")){
+            pesquisarProtuto();
+        } else if (decisao.equals("V")){
+            voltar();
+        } else if (decisao.equals("S")){
+            sair();
         }
 
         
