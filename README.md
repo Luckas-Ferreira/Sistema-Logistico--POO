@@ -20,7 +20,7 @@ Esse é nosso objetivo, vamos tentar ao maximo realizar todas as features com ba
 
 
 ### Features - Andamento
-- [ ] Tela Inicial
+- [x] Tela Inicial
 - [x] Tela Cliente
 - [x] Tela Trabalhador
 - [x] Cadastrar Trabalhador
