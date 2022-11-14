@@ -37,6 +37,7 @@ public class TelaCliente extends Base{
             }
 
         }
+        input.close();
     }
     
 }
