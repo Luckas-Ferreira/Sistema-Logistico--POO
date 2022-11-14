@@ -8,7 +8,6 @@ public class TelaCliente extends Cliente{
 
     public TelaCliente(String nome, int idade, double dinheiro) {
         super(nome, idade, dinheiro);
-        //TODO Auto-generated constructor stub
     }
 
     protected void opcaoClient(){
