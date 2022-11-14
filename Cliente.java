@@ -31,36 +31,19 @@ public class Cliente extends Base{
     }
 
 
-    public String getNome() {
+    public String nomeCliente() {
         return nome;
     }
 
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-
-    public int getIdade() {
+    public int idadeCliente() {
         return idade;
     }
 
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-
-    public double getDinheiro() {
+    public double dinheiroCliente() {
         return dinheiro;
     }
 
-
-    public void setDinheiro(double dinheiro) {
-        this.dinheiro = dinheiro;
-    }
-
-    
 
 
 }
