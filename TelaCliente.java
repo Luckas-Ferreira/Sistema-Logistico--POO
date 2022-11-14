@@ -23,7 +23,9 @@ public class TelaCliente extends Base{
         if (decisao.equals("C")){
             comprarAdicionar();
             // Rediriceso para tela de comprar item
-        } 
+        } else if (decisao.equals("T")){
+            verTodosProduto();
+        }
 
         
     }

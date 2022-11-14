@@ -13,16 +13,16 @@ public abstract class Base {
         sair();
     }
 
-    private void verTodosProduto(){
+    protected void verTodosProduto(){
         System.out.println("[ T ] Ver todos os produtos [ T ]");
     }
-    private void pesquisarProtuto(){
+    protected void pesquisarProtuto(){
         System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
     }
-    private void voltar(){
+    protected void voltar(){
         System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
     }
-    private void sair(){
+    protected void sair(){
         System.out.println("[ S ]        SAIR           [ S ]\n");
     }
 }
