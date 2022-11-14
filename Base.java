@@ -4,7 +4,7 @@ public abstract class Base {
     protected abstract void removerProduto();
 
     public void opcoes(){
-        System.out.println("\n\n\tTELA DO FUNCIONARIO\n");
+        System.out.println("\n\n\tTELA DO CLIENTE\n");
         comprarAdicionar();
         removerProduto();
         verTodosProduto();
