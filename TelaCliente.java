@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class TelaCliente extends Base{
 
+    public TelaCliente(){
+        System.out.println("\n\n\tTELA DO CLIENTE\n");
+    }
+
     @Override
     protected void adicionarProduto() {
         //Cliente não pode adicionar produto
