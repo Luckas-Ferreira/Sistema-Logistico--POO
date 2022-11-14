@@ -1,17 +1,20 @@
-//import java.util.Scanner;
-//import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Login implements Autenticador{
+    Scanner resposta = new Scanner(System.in);
     
-    public String verificar(Funcionario funcionario){
-        return verificar();
+    public void verificar(Funcionario funcionario){
+        verificar();
     }
-    String usuario = "admin";
-    String senha = "123456";
+    
     @Override
-    public String verificar() {
-        return "Verificado";
+    public void verificar() {
+        Verificador v = new Verificador();
+        v.fazerLogin();
+        
     }
 }
+
 
 /*
  * Scanner resposta = new Scanner(System.in);

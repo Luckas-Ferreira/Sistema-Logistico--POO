@@ -1,3 +1,3 @@
 public interface Autenticador {
-    String verificar();
+    void verificar();
 }
