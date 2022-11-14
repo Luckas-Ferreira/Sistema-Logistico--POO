@@ -1,27 +1,28 @@
 public abstract class Base {
+
+    protected abstract void adicionarProduto();
+    protected abstract void removerAdicionar();
+
     public void opcoes(){
-        System.out.println("\n\n\tTELA DO FUNCIONARIO\n");
-        comprarAdicionar();
-        removerProduto();
+        System.out.println("\n\n\tTELA DO CLIENTE\n");
+        adicionarProduto();
+        removerAdicionar();
         verTodosProduto();
         pesquisarProtuto();
         voltar();
         sair();
     }
-    
-    
-    protected abstract void comprarAdicionar();
-    protected abstract void removerProduto();
     private void verTodosProduto(){
+
         System.out.println("[ T ] Ver todos os produtos [ T ]");
     }
-    private void pesquisarProtuto(){
+    protected void pesquisarProtuto(){
         System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
     }
-    private void voltar(){
+    protected void voltar(){
         System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
     }
-    private void sair(){
+    protected void sair(){
         System.out.println("[ S ]        SAIR           [ S ]\n");
     }
 }
