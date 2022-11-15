@@ -19,14 +19,14 @@ Esse é nosso objetivo, vamos tentar ao maximo realizar todas as features com ba
 #
 
 
-### Features - Andamento
+### Features - Concluidas
 - [x] Tela Inicial
 - [x] Tela Cliente
 - [x] Tela Trabalhador
 - [x] Cadastrar Trabalhador
 - [x] Autenticar Trabalhador
 
-Features Futuras
+### Features em Andamento 
 - [ ] Cadastro de cliente
 - [ ] Cadastro de produtos
 - [ ] Pesquisar de produtos
