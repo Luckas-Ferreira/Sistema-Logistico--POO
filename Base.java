@@ -4,7 +4,6 @@ public abstract class Base {
     protected abstract void removerAdicionar();
 
     public void opcoes(){
-        System.out.println("\n\n\tTELA DO CLIENTE\n");
         adicionarProduto();
         removerAdicionar();
         verTodosProduto();
@@ -12,7 +11,7 @@ public abstract class Base {
         voltar();
         sair();
     }
-    private void verTodosProduto(){
+    protected void verTodosProduto(){
 
         System.out.println("[ T ] Ver todos os produtos [ T ]");
     }
