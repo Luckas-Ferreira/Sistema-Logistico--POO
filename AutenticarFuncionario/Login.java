@@ -1,3 +1,4 @@
+package AutenticarFuncionario;
 import java.util.Scanner;
 
 public class Login implements Autenticador{

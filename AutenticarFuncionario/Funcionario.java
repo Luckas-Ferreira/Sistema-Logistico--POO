@@ -1,3 +1,4 @@
+package AutenticarFuncionario;
 import java.util.Scanner;
 public class Funcionario{
     protected String usuario;

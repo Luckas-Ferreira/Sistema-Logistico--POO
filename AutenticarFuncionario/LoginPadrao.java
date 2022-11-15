@@ -1,3 +1,4 @@
+package AutenticarFuncionario;
 public class LoginPadrao {
     String usuario = "admin";
     String senha = "123456";
