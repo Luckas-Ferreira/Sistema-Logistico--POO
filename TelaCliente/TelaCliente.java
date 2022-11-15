@@ -1,3 +1,4 @@
+package TelaCliente;
 import java.util.Scanner;
 
 public class TelaCliente extends Cliente{

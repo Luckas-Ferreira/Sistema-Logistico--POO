@@ -1,3 +1,4 @@
+package TelaCliente;
 public abstract class Base {
 
     protected abstract void adicionarProduto();
