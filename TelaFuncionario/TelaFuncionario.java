@@ -1,6 +1,9 @@
 package TelaFuncionario;
 import java.util.Scanner;
 
+import Base.Base;
+import TelaInicial.TelaInicial;
+
 public class TelaFuncionario extends Base{
     
     public TelaFuncionario(){
@@ -20,7 +23,7 @@ public class TelaFuncionario extends Base{
         
     }
 
-    protected void opcaoClient(){
+    public void opcaoFuncionario(){
         Scanner input = new Scanner(System.in);
         while(true){
 
@@ -37,7 +40,8 @@ public class TelaFuncionario extends Base{
             } else if (decisao.equals("P")){
                 pesquisarProtuto();
             } else if (decisao.equals("V")){
-                voltar();
+                TelaInicial tela = new TelaInicial();
+                tela.telaInial();
             } else if (decisao.equals("S")){
                 sair();
                 break;

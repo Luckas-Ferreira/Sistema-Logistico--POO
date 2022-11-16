@@ -1,4 +1,7 @@
 package TelaCliente;
+
+import Base.Base;
+
 public abstract class Cliente extends Base{  
     //Intenção da classe cliente é registrar os clientes que estão a usar o sistema do mercadinho
     //mostrando a visão de um cliente ao entrar em uma loja, onde tem as informações que por enquanto

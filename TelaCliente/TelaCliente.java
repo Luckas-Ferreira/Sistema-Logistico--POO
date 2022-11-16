@@ -1,6 +1,8 @@
 package TelaCliente;
 import java.util.Scanner;
 
+import TelaInicial.TelaInicial;
+
 public class TelaCliente extends Cliente{
     // A tela cliente mostrará as interações que o cliente podera realizar.
     // *AINDA A DECIDIR SE EXISTIRA UM VERIFICADOR DE CLIENTE*
@@ -30,8 +32,8 @@ public class TelaCliente extends Cliente{
                 pesquisarProtuto();
                 // Pesquisar um produto
             } else if (decisao.equals("V")){
-                voltar();
-                // Retorna a Tela inicial
+                TelaInicial tela = new TelaInicial();
+                tela.telaInial();
             } else if (decisao.equals("S")){
                 sair();
                 break;
