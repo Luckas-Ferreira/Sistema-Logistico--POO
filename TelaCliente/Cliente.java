@@ -6,9 +6,9 @@ public abstract class Cliente extends Base{
     //que tem consigo para adquirir os produtos do mercado ou apenas ver os produtos disponiveis.
     
     // Atributos
-    private String nome;
-    private int idade;
-    private double dinheiro;
+    protected String nome;
+    protected int idade;
+    protected double dinheiro;
     
     
     public Cliente(String nome, int idade, double dinheiro) {

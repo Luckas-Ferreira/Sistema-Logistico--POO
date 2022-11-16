@@ -1,6 +1,8 @@
 package TelaInicial;
 import java.util.Scanner;
 
+import TelaCliente.TelaCliente;
+
 public class TelaInicial {
     
     public void telaInial(){
@@ -16,7 +18,9 @@ public class TelaInicial {
             int resposta = input.nextInt();
 
             if (resposta == 1){
-                System.out.println("Redirecionando para tela do consumidor");
+                TelaCliente cliente = new TelaCliente(null, resposta, resposta);
+                cliente.opcoes();
+                cliente.opcaoClient();
             } else if(resposta == 2){
                 System.out.println("Redirecionando para tela do funcionario");
             }else if(resposta == 3){

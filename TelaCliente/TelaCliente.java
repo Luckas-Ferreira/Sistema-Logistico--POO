@@ -11,7 +11,7 @@ public class TelaCliente extends Cliente{
         super(nome, idade, dinheiro);
     }
 
-    protected void opcaoClient(){
+    public void opcaoClient(){
 
         Scanner input = new Scanner(System.in);
 
