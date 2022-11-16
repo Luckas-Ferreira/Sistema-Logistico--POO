@@ -21,6 +21,7 @@ public abstract class Base {
     }
     protected void voltar(){
         System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
+        
     }
     protected void sair(){
         System.out.println("[ S ]        SAIR           [ S ]\n");
