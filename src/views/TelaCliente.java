@@ -1,47 +1,44 @@
 package views;
-import java.util.Scanner;
 
-import controllers.Cliente;
+import models.Base;
 
-public class TelaCliente extends Cliente{
-    // A tela cliente mostrará as interações que o cliente podera realizar.
-    // *AINDA A DECIDIR SE EXISTIRA UM VERIFICADOR DE CLIENTE*
-     
-
-
-    public TelaCliente(String nome, int idade, double dinheiro) {
-        super(nome, idade, dinheiro);
-    }
-
-    public void opcaoClient(){
-
-        Scanner input = new Scanner(System.in);
-
-        while(true){
-
-            System.out.print("Escolha o que deseja: ");
-            String decisao = input.next().toUpperCase();
-            
-            if (decisao.equals("C")){
-                adicionarProduto();
-                // Ir para tela de comprar item
-            } else if (decisao.equals("T")){
-                verTodosProduto();
-                // Mostrar produtos disponiveis 
-            } else if (decisao.equals("P")){
-                pesquisarProtuto();
-                // Pesquisar um produto
-            } else if (decisao.equals("V")){
-                TelaInicial tela = new TelaInicial();
-                tela.start();
-            } else if (decisao.equals("S")){
-                sair();
-                break;
-                // Sai do mercadinho
-            }
-
-        }
-        input.close();
-    }
+public abstract class TelaCliente extends Base{  
+    //Intenção da classe cliente é registrar os clientes que estão a usar o sistema do mercadinho
+    //mostrando a visão de um cliente ao entrar em uma loja, onde tem as informações que por enquanto
+    //estou jugando inicialmente como a base dessa classe, onde o cliente tem seu nome, idade e o dinheiro
+    //que tem consigo para adquirir os produtos do mercado ou apenas ver os produtos disponiveis.
     
+    // Atributos
+    protected String nome;
+    protected int idade;
+    protected double dinheiro;
+    
+    
+    public TelaCliente(String nome, int idade, double dinheiro) {
+        System.out.println("\n\n\tTELA DO CLIENTE\n");
+        this.nome = nome;
+        this.idade = idade;
+        this.dinheiro = dinheiro;
+    }
+    @Override
+    protected void adicionarProduto() {
+        System.out.println("[ C ]    Comprar Produto    [ C ]");
+    }
+
+    @Override
+    protected void removerAdicionar() {
+    }
+
+    public String nomeCliente() {
+        return nome;
+    }
+    public int idadeCliente() {
+        return idade;
+    }
+    public double dinheiroCliente() {
+        return dinheiro;
+    }
+
+
+
 }

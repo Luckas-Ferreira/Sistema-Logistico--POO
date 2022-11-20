@@ -2,6 +2,7 @@ package autentication;
 import java.util.Scanner;
 
 import controllers.Funcionario;
+import controllers.InteraçãoTelaFuncionario;
 import models.LoginPadrao;
 import views.TelaFuncionario;
 import views.TelaInicial;
@@ -16,8 +17,9 @@ public class Login implements Autenticador{
         if (loginPadrao.getUsuario().equals(funcionario.getUsuario()) && loginPadrao.getSenha().equals(funcionario.getSenha())){
             System.out.println("Entrando no sistema");
             TelaFuncionario telaFuncionario = new TelaFuncionario();
+            InteraçãoTelaFuncionario interaçãoTelaFuncionario = new InteraçãoTelaFuncionario();
             telaFuncionario.opcoes();
-            telaFuncionario.opcaoFuncionario();
+            interaçãoTelaFuncionario.opcaoFuncionario();
         }else {
             Scanner resposta = new Scanner(System.in);
             String resp = "";
@@ -38,8 +40,9 @@ public class Login implements Autenticador{
                     if (funcionario.getUsuario().equals(novo_user) && funcionario.getSenha().equals(nova_password) || usuario2.equals(novo_user) && senha2.equals(nova_password)){
                         System.out.println("Entrando no sistema");
                         TelaFuncionario telaFuncionario = new TelaFuncionario();
+                        InteraçãoTelaFuncionario interaçãoTelaFuncionario = new InteraçãoTelaFuncionario();
                         telaFuncionario.opcoes();
-                        telaFuncionario.opcaoFuncionario();
+                        interaçãoTelaFuncionario.opcaoFuncionario();
                     }
                     else{
                         System.out.println("Login Invalido!");

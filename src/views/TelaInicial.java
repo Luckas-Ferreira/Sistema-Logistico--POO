@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import autentication.Login;
 import controllers.Funcionario;
+import controllers.InteraçãoTelaCliente;
 
 public class TelaInicial {
     
@@ -20,7 +21,7 @@ public class TelaInicial {
             int resposta = input.nextInt();
 
             if (resposta == 1){
-                TelaCliente cliente = new TelaCliente(null, resposta, resposta);
+                InteraçãoTelaCliente cliente = new InteraçãoTelaCliente(null, resposta, resposta);
                 cliente.opcoes();
                 cliente.opcaoClient();
             } else if(resposta == 2){

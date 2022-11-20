@@ -1,5 +1,4 @@
 package views;
-import java.util.Scanner;
 
 import models.Base;
 
@@ -20,33 +19,5 @@ public class TelaFuncionario extends Base{
     protected void removerAdicionar() {
         System.out.println("[ R ]  Remover um produto   [ R ]");
         
-    }
-
-    public void opcaoFuncionario(){
-        Scanner input = new Scanner(System.in);
-        while(true){
-
-            System.out.print("Escolha o que deseja: ");
-            String decisao = input.next().toUpperCase();
-            
-            if (decisao.equals("A")){
-                adicionarProduto();
-                // Rediriceso para tela de comprar item
-            } else if (decisao.equals("R")){
-                removerAdicionar();
-            } else if (decisao.equals("T")){
-                verTodosProduto();
-            } else if (decisao.equals("P")){
-                pesquisarProtuto();
-            } else if (decisao.equals("V")){
-                TelaInicial tela = new TelaInicial();
-                tela.start();
-            } else if (decisao.equals("S")){
-                sair();
-                break;
-            }
-
-        }
-        input.close();
     }
 }
