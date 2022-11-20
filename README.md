@@ -5,7 +5,6 @@ Nosso obejetivo é simular compras,pesquisa de itens, criar e autorizar logins, 
 Esse é nosso objetivo, vamos tentar ao maximo realizar todas as features com base em 4 modelos de projetos, que ainda falta definir onde cada um irar se encaixar.
 </p>
 
-
 <p align="center"> 
   <a href="https://www.python.org/">
 	  made with
