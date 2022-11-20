@@ -1,6 +1,6 @@
-package TelaCliente;
+package controllers;
 
-import Base.Base;
+import models.Base;
 
 public abstract class Cliente extends Base{  
     //Intenção da classe cliente é registrar os clientes que estão a usar o sistema do mercadinho

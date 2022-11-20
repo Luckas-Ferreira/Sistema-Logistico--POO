@@ -1,7 +1,7 @@
-package TelaCliente;
+package views;
 import java.util.Scanner;
 
-import TelaInicial.TelaInicial;
+import controllers.Cliente;
 
 public class TelaCliente extends Cliente{
     // A tela cliente mostrará as interações que o cliente podera realizar.
@@ -33,7 +33,7 @@ public class TelaCliente extends Cliente{
                 // Pesquisar um produto
             } else if (decisao.equals("V")){
                 TelaInicial tela = new TelaInicial();
-                tela.telaInial();
+                tela.start();
             } else if (decisao.equals("S")){
                 sair();
                 break;

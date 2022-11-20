@@ -1,8 +1,10 @@
-package AutenticarFuncionario;
+package autentication;
 import java.util.Scanner;
 
-import TelaFuncionario.TelaFuncionario;
-import TelaInicial.TelaInicial;
+import controllers.Funcionario;
+import models.LoginPadrao;
+import views.TelaFuncionario;
+import views.TelaInicial;
 
 public class Login implements Autenticador{
     Scanner resposta = new Scanner(System.in);
@@ -42,11 +44,11 @@ public class Login implements Autenticador{
                     else{
                         System.out.println("Login Invalido!");
                         TelaInicial telaInit = new TelaInicial();
-                        telaInit.telaInial();
+                        telaInit.start();
                     }
                 }else if (resp.equals("N")){
                     TelaInicial telaInit = new TelaInicial();
-                    telaInit.telaInial();
+                    telaInit.start();
                 }
                 resposta.close();
             }

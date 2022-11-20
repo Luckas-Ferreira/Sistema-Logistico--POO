@@ -1,8 +1,7 @@
-package TelaFuncionario;
+package views;
 import java.util.Scanner;
 
-import Base.Base;
-import TelaInicial.TelaInicial;
+import models.Base;
 
 public class TelaFuncionario extends Base{
     
@@ -41,7 +40,7 @@ public class TelaFuncionario extends Base{
                 pesquisarProtuto();
             } else if (decisao.equals("V")){
                 TelaInicial tela = new TelaInicial();
-                tela.telaInial();
+                tela.start();
             } else if (decisao.equals("S")){
                 sair();
                 break;

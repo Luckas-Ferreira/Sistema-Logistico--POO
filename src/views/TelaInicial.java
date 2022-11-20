@@ -1,13 +1,12 @@
-package TelaInicial;
+package views;
 import java.util.Scanner;
 
-import AutenticarFuncionario.Funcionario;
-import AutenticarFuncionario.Login;
-import TelaCliente.TelaCliente;
+import autentication.Login;
+import controllers.Funcionario;
 
 public class TelaInicial {
     
-    public void telaInial(){
+    public void start(){
 
         try (Scanner input = new Scanner(System.in)) {
             System.out.println("\n\n\tMercadinho do Thiago\n");
