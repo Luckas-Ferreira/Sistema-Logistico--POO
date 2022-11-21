@@ -10,9 +10,6 @@ public class InteraçãoTelaCliente extends TelaCliente{
      
 
 
-    public InteraçãoTelaCliente(String nome, int idade, double dinheiro) {
-        super(nome, idade, dinheiro);
-    }
 
     public void opcaoClient(){
 

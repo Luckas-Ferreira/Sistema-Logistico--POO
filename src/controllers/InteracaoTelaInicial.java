@@ -12,7 +12,7 @@ public class InteracaoTelaInicial {
         int resposta = input.nextInt();
 
         if (resposta == 1){
-            InteraçãoTelaCliente cliente = new InteraçãoTelaCliente(null, resposta, resposta);
+            InteraçãoTelaCliente cliente = new InteraçãoTelaCliente();
             cliente.opcoes();
             cliente.opcaoClient();
         } else if(resposta == 2){
