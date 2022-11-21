@@ -1,4 +1,4 @@
-package models;
+package Base;
 public abstract class Base {
 
     protected abstract void adicionarProduto();

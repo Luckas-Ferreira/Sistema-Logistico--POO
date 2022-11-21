@@ -1,15 +1,17 @@
-package controllers;
+package TelaCliente;
 import java.util.Scanner;
 
-import views.TelaCliente;
-import views.TelaInicial;
+import TelaInicial.TelaInicial;
 
-public class InteraçãoTelaCliente extends TelaCliente{
+public class TelaCliente extends Cliente{
     // A tela cliente mostrará as interações que o cliente podera realizar.
     // *AINDA A DECIDIR SE EXISTIRA UM VERIFICADOR DE CLIENTE*
      
 
 
+    public TelaCliente(String nome, int idade, double dinheiro) {
+        super(nome, idade, dinheiro);
+    }
 
     public void opcaoClient(){
 
@@ -31,7 +33,7 @@ public class InteraçãoTelaCliente extends TelaCliente{
                 // Pesquisar um produto
             } else if (decisao.equals("V")){
                 TelaInicial tela = new TelaInicial();
-                tela.start();
+                tela.telaInial();
             } else if (decisao.equals("S")){
                 sair();
                 break;
