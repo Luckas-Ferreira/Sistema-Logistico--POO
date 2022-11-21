@@ -1,10 +1,10 @@
-package controllers;
+package AutenticarFuncionario;
 import java.util.Scanner;
 public class Funcionario{
-    Scanner login = new Scanner(System.in);
     protected String usuario;
     protected String senha;
     
+    Scanner login = new Scanner(System.in);
     public Funcionario(){
         System.out.print("Usuario: ");
         this.usuario = login.next();
@@ -24,4 +24,9 @@ public class Funcionario{
     public void setUsuario(String usuario){
         this.usuario = usuario;
     }
+    @Override
+    public String toString() {
+        return "Funcionario [usuario=" + usuario + ", senha=" + senha + "]";
+    }
+
 }

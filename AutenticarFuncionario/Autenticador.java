@@ -1,7 +1,4 @@
-package autentication;
-
-import controllers.Funcionario;
-
+package AutenticarFuncionario;
 public interface Autenticador {
     void verificar(Funcionario funcionario);
 }

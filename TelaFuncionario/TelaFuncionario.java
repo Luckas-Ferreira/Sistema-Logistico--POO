@@ -1,11 +1,28 @@
-package controllers;
-
+package TelaFuncionario;
 import java.util.Scanner;
 
-import views.TelaFuncionario;
-import views.TelaInicial;
+import Base.Base;
+import TelaInicial.TelaInicial;
 
-public class InteraçãoTelaFuncionario extends TelaFuncionario{
+public class TelaFuncionario extends Base{
+    
+    public TelaFuncionario(){
+        System.out.println("\n\n\tTELA DO FUNCIONARIO\n");
+    }
+    
+    @Override
+    protected void adicionarProduto() {
+        
+        System.out.println("[ A ] Adicionar um produto  [ A ]");
+        
+    }
+
+    @Override
+    protected void removerAdicionar() {
+        System.out.println("[ R ]  Remover um produto   [ R ]");
+        
+    }
+
     public void opcaoFuncionario(){
         Scanner input = new Scanner(System.in);
         while(true){
@@ -24,7 +41,7 @@ public class InteraçãoTelaFuncionario extends TelaFuncionario{
                 pesquisarProtuto();
             } else if (decisao.equals("V")){
                 TelaInicial tela = new TelaInicial();
-                tela.start();
+                tela.telaInial();
             } else if (decisao.equals("S")){
                 sair();
                 break;

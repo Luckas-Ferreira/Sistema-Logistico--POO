@@ -1,11 +1,8 @@
-package autentication;
+package AutenticarFuncionario;
 import java.util.Scanner;
 
-import controllers.Funcionario;
-import controllers.InteraçãoTelaFuncionario;
-import models.LoginPadrao;
-import views.TelaFuncionario;
-import views.TelaInicial;
+import TelaFuncionario.TelaFuncionario;
+import TelaInicial.TelaInicial;
 
 public class Login implements Autenticador{
     Scanner resposta = new Scanner(System.in);
@@ -17,9 +14,8 @@ public class Login implements Autenticador{
         if (loginPadrao.getUsuario().equals(funcionario.getUsuario()) && loginPadrao.getSenha().equals(funcionario.getSenha())){
             System.out.println("Entrando no sistema");
             TelaFuncionario telaFuncionario = new TelaFuncionario();
-            InteraçãoTelaFuncionario interaçãoTelaFuncionario = new InteraçãoTelaFuncionario();
             telaFuncionario.opcoes();
-            interaçãoTelaFuncionario.opcaoFuncionario();
+            telaFuncionario.opcaoFuncionario();
         }else {
             Scanner resposta = new Scanner(System.in);
             String resp = "";
@@ -40,18 +36,17 @@ public class Login implements Autenticador{
                     if (funcionario.getUsuario().equals(novo_user) && funcionario.getSenha().equals(nova_password) || usuario2.equals(novo_user) && senha2.equals(nova_password)){
                         System.out.println("Entrando no sistema");
                         TelaFuncionario telaFuncionario = new TelaFuncionario();
-                        InteraçãoTelaFuncionario interaçãoTelaFuncionario = new InteraçãoTelaFuncionario();
                         telaFuncionario.opcoes();
-                        interaçãoTelaFuncionario.opcaoFuncionario();
+                        telaFuncionario.opcaoFuncionario();
                     }
                     else{
                         System.out.println("Login Invalido!");
                         TelaInicial telaInit = new TelaInicial();
-                        telaInit.start();
+                        telaInit.telaInial();
                     }
                 }else if (resp.equals("N")){
                     TelaInicial telaInit = new TelaInicial();
-                    telaInit.start();
+                    telaInit.telaInial();
                 }
                 resposta.close();
             }
