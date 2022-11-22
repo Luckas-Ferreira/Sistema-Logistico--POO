@@ -21,7 +21,7 @@ public class TelaInicial {
             int resposta = input.nextInt();
 
             if (resposta == 1){
-                TelaCliente cliente = new TelaCliente(null, resposta, resposta);
+                TelaCliente cliente = new TelaCliente();
                 cliente.opcoes();
                 cliente.opcaoClient();
             } else if(resposta == 2){

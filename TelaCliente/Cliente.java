@@ -1,8 +1,7 @@
 package TelaCliente;
 
-import Base.Base;
 
-public abstract class Cliente extends Base{  
+public abstract class Cliente{  
     //Intenção da classe cliente é registrar os clientes que estão a usar o sistema do mercadinho
     //mostrando a visão de um cliente ao entrar em uma loja, onde tem as informações que por enquanto
     //estou jugando inicialmente como a base dessa classe, onde o cliente tem seu nome, idade e o dinheiro
@@ -15,26 +14,11 @@ public abstract class Cliente extends Base{
     
     
     public Cliente(String nome, int idade, double dinheiro) {
-        System.out.println("\n\n\tTELA DO CLIENTE\n");
+        
         this.nome = nome;
         this.idade = idade;
         this.dinheiro = dinheiro;
     }
-
-
-    @Override
-    protected void adicionarProduto() {
-        System.out.println("[ C ]    Comprar Produto    [ C ]");
-        
-    }
-    
-
-
-    @Override
-    protected void removerAdicionar() {
-        
-    }
-
 
     public String nomeCliente() {
         return nome;

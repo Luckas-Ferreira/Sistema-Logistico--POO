@@ -1,17 +1,29 @@
 package TelaCliente;
 import java.util.Scanner;
 
+import Base.Base;
 import TelaInicial.TelaInicial;
 
-public class TelaCliente extends Cliente{
+public class TelaCliente extends Base{
     // A tela cliente mostrará as interações que o cliente podera realizar.
     // *AINDA A DECIDIR SE EXISTIRA UM VERIFICADOR DE CLIENTE*
      
-
-
-    public TelaCliente(String nome, int idade, double dinheiro) {
-        super(nome, idade, dinheiro);
+    public TelaCliente(){
+        System.out.println("\n\n\tTELA DO CLIENTE\n");
     }
+
+    @Override
+    protected void adicionarProduto() {
+        System.out.println("[ C ]    Comprar Produto    [ C ]");
+        
+    }
+
+    @Override
+    protected void removerAdicionar() {
+        
+        
+    }
+
 
     public void opcaoClient(){
 
@@ -43,5 +55,7 @@ public class TelaCliente extends Cliente{
         }
         input.close();
     }
+
+    
     
 }
