@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-public class Produtos {
+
+public class Produtos{
     ArrayList<Produto> produtos = new ArrayList<>();
 
     public void ProdutosCadastrados(){

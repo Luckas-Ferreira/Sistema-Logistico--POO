@@ -31,7 +31,7 @@ public class TelaFuncionario extends Base{
             String decisao = input.next().toUpperCase();
             
             if (decisao.equals("A")){
-                adicionarProduto();
+                
                 // Rediriceso para tela de comprar item
             } else if (decisao.equals("R")){
                 removerAdicionar();

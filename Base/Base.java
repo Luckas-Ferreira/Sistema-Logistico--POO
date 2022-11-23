@@ -1,6 +1,5 @@
 package Base;
-public abstract class Base {
-
+public abstract class Base{
     protected abstract void adicionarProduto();
     protected abstract void removerAdicionar();
 
@@ -26,4 +25,5 @@ public abstract class Base {
     protected void sair(){
         System.out.println("[ S ]        SAIR           [ S ]\n");
     }
+    
 }

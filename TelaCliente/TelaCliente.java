@@ -1,13 +1,13 @@
 package TelaCliente;
+
 import java.util.Scanner;
+
 
 import Base.Base;
 import TelaInicial.TelaInicial;
 
 public class TelaCliente extends Base{
-    // A tela cliente mostrará as interações que o cliente podera realizar.
-    // *AINDA A DECIDIR SE EXISTIRA UM VERIFICADOR DE CLIENTE*
-     
+    
     public TelaCliente(){
         System.out.println("\n\n\tTELA DO CLIENTE\n");
     }
@@ -23,8 +23,6 @@ public class TelaCliente extends Base{
         
         
     }
-
-
     public void opcaoClient(){
 
         Scanner input = new Scanner(System.in);
@@ -35,7 +33,7 @@ public class TelaCliente extends Base{
             String decisao = input.next().toUpperCase();
             
             if (decisao.equals("C")){
-                adicionarProduto();
+                
                 // Ir para tela de comprar item
             } else if (decisao.equals("T")){
                 verTodosProduto();
