@@ -9,7 +9,8 @@ public class TelaInicial {
     public void telaInicial(){
 
         try (Scanner input = new Scanner(System.in)) {
-            System.out.println("\n\n\tMercadinho do Thiago\n");
+            System.out.println("\n\n==========================================");
+            System.out.println("\tMercadinho do Thiago\n");
             System.out.println("Você é um consumidor?");
             System.out.println("Você é um funcionario?");
             System.out.println("\n\t[1]   Consumidor   [1]");
@@ -18,7 +19,7 @@ public class TelaInicial {
 
             System.out.print("Resposta: ");
             int resposta = input.nextInt();
-
+            System.out.println("==========================================\n");
             
             if (resposta == 1){
                 UI cliente = new UI();

@@ -17,7 +17,7 @@ public class ViewCadastroCliente extends TelaCliente{
     public void cadastroCliente(){
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("==== Entrando cliente ====\n");
+        System.out.println("\t==== Entrando cliente ====\n");
         System.out.print("Nome do cliente: ");
         this.nome = entrada.nextLine();
         
