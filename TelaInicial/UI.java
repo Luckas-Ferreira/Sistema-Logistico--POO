@@ -2,12 +2,14 @@ package TelaInicial;
 
 import Base.TelaCliente;
 import Base.TelaFuncionario;
+import SobreCLiente.Cliente;
 
 public class UI{
-    TelaCliente cliente = new TelaCliente();
+    Cliente cliente = new Cliente();
     TelaFuncionario funcionario = new TelaFuncionario();
     
     public void telaCliente(){
+        cliente.cadastroCliente();
         System.out.println("\n\n\tTELA DO CLIENTE\n");
         System.out.println("[ C ]    Comprar Produto    [ C ]");
         System.out.println("[ T ] Ver todos os produtos [ T ]");
