@@ -31,7 +31,7 @@ public class ViewCadastroCliente extends TelaCliente{
         
 
         //Cadastrar no registro do mercadinho
-        CadastroCliente.adicionarCliente(objCliente);
+        CadastroCliente.getInstance().adicionarCliente(objCliente);
         
         
         

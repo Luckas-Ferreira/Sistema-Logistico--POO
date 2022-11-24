@@ -6,14 +6,23 @@ import java.util.ArrayList;
 public class CadastroCliente extends ViewCadastroCliente{
     
     // Lista de registro de clientes
-    static private ArrayList<Cliente> listaClientes = new ArrayList<>();
+    private ArrayList<Cliente> listaClientes = new ArrayList<>();
 
-    static public void adicionarCliente(Cliente c){
+    // Padrão de projeto Singleton pattern
+    private static CadastroCliente istance = null;
+    static public CadastroCliente getInstance(){
+        if (istance == null){
+            istance = new CadastroCliente();
+        }
+        return istance;
+    }
+
+    public void adicionarCliente(Cliente c){
         listaClientes.add(c);
     }
 
     // Mostra todos clientes registrados
-    static public String listarClientes(){
+    public String listarClientes(){
         String saida = "";
         int i = 1;
         for(Cliente l : listaClientes){
