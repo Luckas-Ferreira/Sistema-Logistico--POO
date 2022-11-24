@@ -1,8 +1,12 @@
+package PRODUTO;
+
 import java.util.ArrayList;
 
 public class Produtos{
     ArrayList<Produto> produtos = new ArrayList<>();
 
+    public Produtos(){}
+    
     public void ProdutosCadastrados(){
         produtos.add(new Produto("Arroz", 2.5f, 3));
         produtos.add(new Produto("Feijão", 2.5f, 5));

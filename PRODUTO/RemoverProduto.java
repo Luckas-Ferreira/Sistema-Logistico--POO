@@ -1,3 +1,5 @@
+package PRODUTO;
+
 public class RemoverProduto {
 
     protected String nome;

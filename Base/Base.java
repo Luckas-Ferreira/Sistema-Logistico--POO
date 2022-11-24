@@ -1,29 +1,55 @@
 package Base;
+
+import java.util.Scanner;
+
+import PRODUTO.Produtos;
+import TelaInicial.TelaInicial;
+
 public abstract class Base{
-    protected abstract void adicionarProduto();
-    protected abstract void removerAdicionar();
+    public abstract void adicionarProduto();
+    public abstract void removerComprar();
 
-    public void opcoes(){
-        adicionarProduto();
-        removerAdicionar();
-        verTodosProduto();
-        pesquisarProtuto();
-        voltar();
-        sair();
+    public void verTodosProduto(){
+        Produtos produto = new Produtos();
+        produto.ProdutosCadastrados();
+        produto.VerProdutos();
     }
-    protected void verTodosProduto(){
-
-        System.out.println("[ T ] Ver todos os produtos [ T ]");
+    public void pesquisarProtuto(){
+        Produtos produto = new Produtos();
+        produto.ProdutosCadastrados();
+        produto.pesquisarProduto(null);
     }
-    protected void pesquisarProtuto(){
-        System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
+    public void voltar(){
+        TelaInicial tela = new TelaInicial();
+        tela.telaInicial();
     }
-    protected void voltar(){
-        System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
-        
-    }
-    protected void sair(){
-        System.out.println("[ S ]        SAIR           [ S ]\n");
+    public void sair(){
+        System.out.println("Saindo do programa");
     }
     
+    
+    public void opcao(){
+        Scanner input = new Scanner(System.in);
+        while(true){
+            System.out.print("Escolha o que deseja: ");
+            String decisao = input.nextLine().toUpperCase();
+            if (decisao.equals("C")){
+                removerComprar();
+            }else if (decisao.equals("R")){
+                removerComprar();
+            }if (decisao.equals("A")){
+                adicionarProduto();
+            }else if (decisao.equals("T")){
+                verTodosProduto();
+            }else if (decisao.equals("P")){
+                pesquisarProtuto();
+            } else if (decisao.equals("V")){
+                voltar();
+            } else if (decisao.equals("S")){
+                sair();
+                break;
+            }
+        }
+        
+    }
 }

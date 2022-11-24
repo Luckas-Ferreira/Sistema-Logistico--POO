@@ -1,8 +1,8 @@
 package AutenticarFuncionario;
 import java.util.Scanner;
 
-import TelaFuncionario.TelaFuncionario;
 import TelaInicial.TelaInicial;
+import TelaInicial.UI;
 
 public class Login implements Autenticador{
     Scanner resposta = new Scanner(System.in);
@@ -13,9 +13,8 @@ public class Login implements Autenticador{
     public void verificar(Funcionario funcionario) {
         if (loginPadrao.getUsuario().equals(funcionario.getUsuario()) && loginPadrao.getSenha().equals(funcionario.getSenha())){
             System.out.println("Entrando no sistema");
-            TelaFuncionario telaFuncionario = new TelaFuncionario();
-            telaFuncionario.opcoes();
-            telaFuncionario.opcaoFuncionario();
+            UI tela = new UI();
+            tela.telaFuncionario();
         }else {
             Scanner resposta = new Scanner(System.in);
             String resp = "";
@@ -35,18 +34,17 @@ public class Login implements Autenticador{
                     String nova_password = resposta.next();
                     if (funcionario.getUsuario().equals(novo_user) && funcionario.getSenha().equals(nova_password) || usuario2.equals(novo_user) && senha2.equals(nova_password)){
                         System.out.println("Entrando no sistema");
-                        TelaFuncionario telaFuncionario = new TelaFuncionario();
-                        telaFuncionario.opcoes();
-                        telaFuncionario.opcaoFuncionario();
+                        UI tela = new UI();
+                        tela.telaFuncionario();
                     }
                     else{
                         System.out.println("Login Invalido!");
                         TelaInicial telaInit = new TelaInicial();
-                        telaInit.telaInial();
+                        telaInit.telaInicial();
                     }
                 }else if (resp.equals("N")){
                     TelaInicial telaInit = new TelaInicial();
-                    telaInit.telaInial();
+                    telaInit.telaInicial();
                 }
                 resposta.close();
             }

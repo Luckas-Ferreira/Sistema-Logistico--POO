@@ -1,3 +1,5 @@
+package PRODUTO;
+
 public class PesquisarProduto{
     protected String nome;
 

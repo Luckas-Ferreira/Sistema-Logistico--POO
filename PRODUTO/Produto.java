@@ -1,3 +1,5 @@
+package PRODUTO;
+
 public class Produto {
     protected String nome;
     protected float valor;

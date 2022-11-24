@@ -1,6 +1,9 @@
+package PRODUTO;
+
 public class Main {
     public static void main(String[] args) {
         Produtos produtos = new Produtos();
+        
         produtos.ProdutosCadastrados();
         produtos.VerProdutos();
         System.out.println("--");

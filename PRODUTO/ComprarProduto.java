@@ -1,3 +1,5 @@
+package PRODUTO;
+
 public class ComprarProduto {
     protected String nome;
     protected int quantidade;

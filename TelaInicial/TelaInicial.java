@@ -3,11 +3,10 @@ import java.util.Scanner;
 
 import AutenticarFuncionario.Funcionario;
 import AutenticarFuncionario.Login;
-import TelaCliente.TelaCliente;
 
 public class TelaInicial {
     
-    public void telaInial(){
+    public void telaInicial(){
 
         try (Scanner input = new Scanner(System.in)) {
             System.out.println("\n\n\tMercadinho do Thiago\n");
@@ -21,9 +20,8 @@ public class TelaInicial {
             int resposta = input.nextInt();
 
             if (resposta == 1){
-                TelaCliente cliente = new TelaCliente();
-                cliente.opcoes();
-                cliente.opcaoClient();
+                UI cliente = new UI();
+                cliente.telaCliente();
             } else if(resposta == 2){
                 Login login = new Login();
                 Funcionario fucionario = new Funcionario();
@@ -31,7 +29,7 @@ public class TelaInicial {
                 
             }else if(resposta == 3){
                 System.out.println("Saindo da tela do mercadinho");
-                
+                System.exit(0);
             }
         }
     }
