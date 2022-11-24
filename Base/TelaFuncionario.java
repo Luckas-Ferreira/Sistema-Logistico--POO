@@ -6,7 +6,6 @@ import PRODUTO.RemoverProduto;
 public class TelaFuncionario extends Base{
     Produtos produto = new Produtos();
     
-    
     @Override
     public void adicionarProduto() {
         produto.ProdutosCadastrados();
@@ -18,5 +17,13 @@ public class TelaFuncionario extends Base{
     public void removerComprar() {
         produto.ProdutosCadastrados();
         produto.removerProduto(new RemoverProduto("Gato")); 
+    }
+
+
+    @Override
+    public void telaCliente() {  
+    }
+    @Override
+    public void telaFuncionario() {    
     }    
 }

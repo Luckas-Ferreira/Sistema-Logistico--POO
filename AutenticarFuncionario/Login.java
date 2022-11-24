@@ -1,7 +1,5 @@
 package AutenticarFuncionario;
 import java.util.Scanner;
-
-import TelaInicial.TelaInicial;
 import TelaInicial.UI;
 
 public class Login implements Autenticador{
@@ -39,11 +37,11 @@ public class Login implements Autenticador{
                     }
                     else{
                         System.out.println("Login Invalido!");
-                        TelaInicial telaInit = new TelaInicial();
+                        UI telaInit = new UI();
                         telaInit.telaInicial();
                     }
                 }else if (resp.equals("N")){
-                    TelaInicial telaInit = new TelaInicial();
+                    UI telaInit = new UI();
                     telaInit.telaInicial();
                 }
                 resposta.close();
