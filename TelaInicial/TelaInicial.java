@@ -19,6 +19,7 @@ public class TelaInicial {
             System.out.print("Resposta: ");
             int resposta = input.nextInt();
 
+            
             if (resposta == 1){
                 UI cliente = new UI();
                 cliente.telaCliente();

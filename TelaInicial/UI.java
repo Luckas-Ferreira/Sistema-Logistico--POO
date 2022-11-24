@@ -1,11 +1,12 @@
 package TelaInicial;
 
-import Base.TelaCliente;
+
 import Base.TelaFuncionario;
-import SobreCLiente.Cliente;
+import SobreCLiente.CadastroCliente;
+
 
 public class UI{
-    Cliente cliente = new Cliente();
+    CadastroCliente cliente = new CadastroCliente();
     TelaFuncionario funcionario = new TelaFuncionario();
     
     public void telaCliente(){
