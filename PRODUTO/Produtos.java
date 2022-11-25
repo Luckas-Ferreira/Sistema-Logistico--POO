@@ -52,9 +52,7 @@ public class Produtos{
                 // Mandar para tela perguntando qual a forma de pagamento
                 cliente.mudarDinheiro(cliente.getDinheiro() - (produto.valor * comprarProduto.pegarQuantidade()));
                 produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.pegarQuantidade());
-                System.out.println(CadastroCliente.getInstance().listarClientes());
-                
-                
+        
                 if (produto.getQuantidade() == 0){
                     produtos.remove(produto);
                 }else if (produto.getQuantidade() < 0){
@@ -79,11 +77,9 @@ public class Produtos{
         }
     }
     public void pesquisarProduto(PesquisarProduto pesquisarProduto){
-        for(int i = 0; i < produtos.size(); i++){
-            Produto produto = produtos.get(i);
-    
-            if(produto.getNome().equals(pesquisarProduto.getNome())){
-                produto.getNome();
+        for (Produto produto: produtos){ //Chamada Enhanced for-loop para percorrer toda a lista.
+            if(produto.getNome().toLowerCase().equals(pesquisarProduto.getNome().toLowerCase())){
+                System.out.println(produto);
             }
         }
             

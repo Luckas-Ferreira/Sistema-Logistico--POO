@@ -2,6 +2,7 @@ package Base;
 
 import java.util.Scanner;
 
+import PRODUTO.PesquisarProduto;
 import PRODUTO.Produtos;
 import TelaInicial.UI;
 
@@ -16,7 +17,7 @@ public abstract class Base{
         Produtos.getInstance().VerProdutos();
     }
     public void pesquisarProtuto(){
-        //produtos.pesquisarProduto(null);
+        Produtos.getInstance().pesquisarProduto(new PesquisarProduto());
     }
     public void voltar(){
         UI ui = new UI();
