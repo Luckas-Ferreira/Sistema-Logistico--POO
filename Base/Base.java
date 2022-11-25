@@ -26,17 +26,20 @@ public abstract class Base{
         ui.telaInicial();
     }
     public void sair(){
-        System.out.println("Saindo do programa");
+        System.out.println("\nDeseja sair do programa? \nDigite [3] novamente para sair!");
+        
     }
     
     
     public void opcao(){
         Scanner input = new Scanner(System.in);
 
-        while(true){
+        Boolean condicao = true;
+        while(condicao){
             System.out.println("\n==========================================\n");
             System.out.print("Escolha o que deseja: ");
             String decisao = input.nextLine().toUpperCase();
+            System.out.println("\n==========================================\n");
             if (decisao.equals("1")){
                 telaCliente();
             }else if (decisao.equals("2")){
@@ -53,7 +56,7 @@ public abstract class Base{
                 pesquisarProtuto();
             } else if (decisao.equals("V")){
                 voltar();
-            } else if (decisao.equals("S") || (decisao.equals("3"))){
+            } else if(decisao.equals("3")){
                 sair();
                 break;
             }

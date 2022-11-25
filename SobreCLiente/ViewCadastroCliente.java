@@ -21,7 +21,7 @@ public class ViewCadastroCliente extends TelaCliente{
         System.out.print("Nome do cliente: ");
         this.nome = entrada.nextLine();
         
-        this.codigo = (int) (1 + Math.random() * 100-1);
+        this.codigo = (int) (1 + Math.random() * 1000-1);
         
         System.out.print("Dinheiro cliente: ");
         this.dinheiro = entrada.nextFloat();

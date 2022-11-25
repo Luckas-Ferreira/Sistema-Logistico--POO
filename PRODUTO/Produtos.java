@@ -23,7 +23,7 @@ public class Produtos{
 
     public void comprarProduto(ComprarProduto comprarProduto){
         for(int i = 0; i < produtos.size(); i++){
-        Produto produto = produtos.get(i);
+            Produto produto = produtos.get(i);
 
         if(produto.getNome().equals(comprarProduto.getNome())){
             if(produto.getQuantidade()> 0){
@@ -49,7 +49,8 @@ public class Produtos{
                 produtos.remove(produto);
                 // Sai do loop.
                 break;
-            }}
+            }
+        }
     }
     public void pesquisarProduto(PesquisarProduto pesquisarProduto){
         for(int i = 0; i < produtos.size(); i++){
@@ -57,7 +58,8 @@ public class Produtos{
     
             if(produto.getNome().equals(pesquisarProduto.getNome())){
                 produto.getNome();
-            }}
+            }
+        }
             
     }
     public void VerProdutos(){

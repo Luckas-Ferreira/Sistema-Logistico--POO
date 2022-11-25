@@ -1,0 +1,35 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "AutenticarFuncionario.Main",
+            "projectName": "Sistema-Logistico--POO_3ae73b28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "PRODUTO.Main",
+            "projectName": "Sistema-Logistico--POO_3ae73b28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainTela",
+            "request": "launch",
+            "mainClass": "TelaInicial.MainTela",
+            "projectName": "Sistema-Logistico--POO_3ae73b28"
+        }
+    ]
+}

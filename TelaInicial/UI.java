@@ -31,7 +31,7 @@ public class UI{
         System.out.println("[ T ] Ver todos os produtos [ T ]");
         System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
         System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
-        System.out.println("[ S ]        SAIR           [ S ]\n");
+        System.out.println("[ 3 ]        SAIR           [ 3 ]\n");
         cliente.opcao();
     }
 
@@ -43,7 +43,7 @@ public class UI{
         System.out.println("[ T ] Ver todos os produtos [ T ]");
         System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
         System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
-        System.out.println("[ S ]        SAIR           [ S ]\n");
+        System.out.println("[ 3 ]        SAIR           [ 3 ]\n");
         funcionario.opcao();
         
     }
