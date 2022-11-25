@@ -6,20 +6,17 @@ import PRODUTO.Produtos;
 import TelaInicial.UI;
 
 public abstract class Base{
+    
     public abstract void adicionarProduto();
     public abstract void removerComprar();
     public abstract void telaCliente();
     public abstract void telaFuncionario();
 
     public void verTodosProduto(){
-        Produtos produto = new Produtos();
-        produto.ProdutosCadastrados();
-        produto.VerProdutos();
+        Produtos.getInstance().VerProdutos();
     }
     public void pesquisarProtuto(){
-        Produtos produto = new Produtos();
-        produto.ProdutosCadastrados();
-        produto.pesquisarProduto(null);
+        //produtos.pesquisarProduto(null);
     }
     public void voltar(){
         UI ui = new UI();
@@ -36,15 +33,12 @@ public abstract class Base{
 
         Boolean condicao = true;
         while(condicao){
+            
             System.out.println("\n==========================================\n");
             System.out.print("Escolha o que deseja: ");
             String decisao = input.nextLine().toUpperCase();
             System.out.println("\n==========================================\n");
-            if (decisao.equals("1")){
-                telaCliente();
-            }else if (decisao.equals("2")){
-                telaFuncionario();
-            }else if (decisao.equals("C")){
+            if (decisao.equals("C")){
                 removerComprar();
             }else if (decisao.equals("R")){
                 removerComprar();

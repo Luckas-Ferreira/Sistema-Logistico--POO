@@ -35,7 +35,7 @@ public class Cliente extends CadastroCliente{
     public float getDinheiro() {
         return dinheiro;
     }
-    public void setDinheiro(float dinheiro) {
+    public void mudarDinheiro(float dinheiro) {
         this.dinheiro = dinheiro;
     }
 

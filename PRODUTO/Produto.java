@@ -5,12 +5,14 @@ public class Produto {
     protected float valor;
     protected int quantidade;
     
+    public Produto(){}
+
     public Produto(String nome, float valor, int quantidade){
         this.nome = nome;
         this.valor = valor;
         this.quantidade = quantidade;
     }
-
+    
     public String getNome() {
         return nome;
     }

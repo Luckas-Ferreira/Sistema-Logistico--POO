@@ -8,16 +8,16 @@ public class ComprarProduto {
     protected int quantidade;
     
     public ComprarProduto(){
-        System.out.println("Nome do produto: ");
+        System.out.print("Nome do produto: ");
         this.nome = input.nextLine();
-        System.out.println("Deseja comprar quantos desse produto? ");
+        System.out.print("Deseja comprar quantos desse produto? ");
         this.quantidade = input.nextInt();
     }
 
     public String getNome() {
         return nome;
     }
-    public int getQuantidade(){
+    public int pegarQuantidade(){
         return quantidade;
     }
 }

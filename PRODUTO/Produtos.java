@@ -2,12 +2,15 @@ package PRODUTO;
 
 import java.util.ArrayList;
 
+import SobreCLiente.CadastroCliente;
+import SobreCLiente.Cliente;
+
 public class Produtos{
     ArrayList<Produto> produtos = new ArrayList<>();
+    Cliente cliente = new Cliente();
+    Produto produto = new Produto();
 
-    public Produtos(){}
-    
-    public void ProdutosCadastrados(){
+    public Produtos(){
         produtos.add(new Produto("Arroz", 2.5f, 3));
         produtos.add(new Produto("Feijão", 2.5f, 5));
         produtos.add(new Produto("Café", 2.5f, 7));
@@ -17,6 +20,15 @@ public class Produtos{
         produtos.add(new Produto("Caviar fds", 10.000f, 87));
     }
     
+    // Padrão de projeto Singleton pattern
+    private static Produtos istance = null;
+    static public Produtos getInstance(){
+        if (istance == null){
+            istance = new Produtos();
+        }
+        return istance;
+    }
+
     public void adicionarProduto(Produto produto){
         produtos.add(produto);
     }
@@ -26,9 +38,13 @@ public class Produtos{
             Produto produto = produtos.get(i);
 
         if(produto.getNome().equals(comprarProduto.getNome())){
-            if(produto.getQuantidade()> 0){
+            if(produto.getQuantidade() > 0){
                 // Mandar para tela perguntando qual a forma de pagamento
-                produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.getQuantidade());
+                cliente.mudarDinheiro(cliente.getDinheiro() - (produto.valor * comprarProduto.pegarQuantidade()));
+                produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.pegarQuantidade());
+                System.out.println(CadastroCliente.getInstance().listarClientes());
+                
+                
                 if (produto.getQuantidade() == 0){
                     produtos.remove(produto);
                 }else if (produto.getQuantidade() < 0){

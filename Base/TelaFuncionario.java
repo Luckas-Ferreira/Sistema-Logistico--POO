@@ -3,20 +3,20 @@ package Base;
 import PRODUTO.Produtos;
 import PRODUTO.RemoverProduto;
 
+
 public class TelaFuncionario extends Base{
-    Produtos produto = new Produtos();
-    
+        
     @Override
     public void adicionarProduto() {
-        produto.ProdutosCadastrados();
-        produto.VerProdutos();
-        produto.adicionarProduto(null);
+        
+        Produtos.getInstance().VerProdutos();
+        Produtos.getInstance().adicionarProduto(null);
     }
 
     @Override
     public void removerComprar() {
-        produto.ProdutosCadastrados();
-        produto.removerProduto(new RemoverProduto("Gato")); 
+        
+        Produtos.getInstance().removerProduto(new RemoverProduto("Gato")); 
     }
 
 
