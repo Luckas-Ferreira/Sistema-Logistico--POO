@@ -10,7 +10,7 @@ public class TelaCliente extends Base{
     public void removerComprar() {
         produto.ProdutosCadastrados();
         produto.VerProdutos();
-        produto.comprarProduto(new ComprarProduto("açuca", 1));   
+        produto.comprarProduto(new ComprarProduto());   
     }
 
     @Override

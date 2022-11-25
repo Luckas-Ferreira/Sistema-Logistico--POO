@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MainProduto",
+            "request": "launch",
+            "mainClass": "PRODUTO.MainProduto",
+            "projectName": "Sistema-Logistico--POO_f4f1b88d"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainTela",
+            "request": "launch",
+            "mainClass": "TelaInicial.MainTela",
+            "projectName": "Sistema-Logistico--POO_f4f1b88d"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
