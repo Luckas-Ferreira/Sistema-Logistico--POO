@@ -1,6 +1,7 @@
 package PRODUTO;
 
 public class Produto {
+
     protected String nome;
     protected float valor;
     protected int quantidade;
@@ -13,6 +14,7 @@ public class Produto {
         this.quantidade = quantidade;
     }
     
+
     public String getNome() {
         return nome;
     }

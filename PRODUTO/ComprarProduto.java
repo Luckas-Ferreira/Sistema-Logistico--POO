@@ -9,7 +9,7 @@ public class ComprarProduto {
     
     public ComprarProduto(){
         System.out.print("Nome do produto: ");
-        this.nome = input.nextLine();
+        this.nome = input.nextLine().toLowerCase();
         System.out.print("Deseja comprar quantos desse produto? ");
         this.quantidade = input.nextInt();
     }

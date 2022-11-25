@@ -1,12 +1,15 @@
 package PRODUTO;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import SobreCLiente.CadastroCliente;
 import SobreCLiente.Cliente;
 
 public class Produtos{
     ArrayList<Produto> produtos = new ArrayList<>();
+    Scanner input = new Scanner(System.in);
+    
     Cliente cliente = new Cliente();
     Produto produto = new Produto();
 
@@ -29,15 +32,22 @@ public class Produtos{
         return istance;
     }
 
-    public void adicionarProduto(Produto produto){
-        produtos.add(produto);
+    public void adicionarProduto(){
+        System.out.println("\n\n==========================================");
+        System.out.print("Nome: ");
+        String nome = input.nextLine();
+        System.out.print("Qual sera o valor do produto? ");
+        int valor = input.nextInt();
+        System.out.print("Tera quantos diponiveis? ");
+        int quantidade = input.nextInt();
+        produtos.add(new Produto(nome, valor, quantidade));
     }
 
     public void comprarProduto(ComprarProduto comprarProduto){
         for(int i = 0; i < produtos.size(); i++){
             Produto produto = produtos.get(i);
 
-        if(produto.getNome().equals(comprarProduto.getNome())){
+        if(produto.getNome().toLowerCase().equals(comprarProduto.getNome())){
             if(produto.getQuantidade() > 0){
                 // Mandar para tela perguntando qual a forma de pagamento
                 cliente.mudarDinheiro(cliente.getDinheiro() - (produto.valor * comprarProduto.pegarQuantidade()));
@@ -60,7 +70,7 @@ public class Produtos{
         for(int i = 0; i < produtos.size(); i++){
             Produto produto = produtos.get(i);
     
-            if(produto.getNome().equals(removerProduto.getNome())){
+            if(produto.getNome().toLowerCase().equals(removerProduto.getNome())){
                 
                 produtos.remove(produto);
                 // Sai do loop.

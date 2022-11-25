@@ -1,12 +1,14 @@
 package PRODUTO;
 
-public class RemoverProduto {
+import java.util.Scanner;
 
+public class RemoverProduto {
+    Scanner input = new Scanner(System.in);
     protected String nome;
-    protected int quantidade;
-    
-    public RemoverProduto(String nome){
-        this.nome = nome;
+        
+    public RemoverProduto(){
+        System.out.print("Nome do produto: ");
+        this.nome = input.nextLine().toLowerCase();
     }
 
     public String getNome() {
