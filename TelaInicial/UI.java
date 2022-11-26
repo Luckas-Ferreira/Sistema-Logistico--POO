@@ -27,12 +27,12 @@ public class UI{
     public void telaCliente(){
         cliente.cadastroCliente();
         System.out.println("\n\n==========================================\n");
-        System.out.println("\tTELA DO CLIENTE\n");
-        System.out.println("[ C ]    Comprar Produto    [ C ]");
-        System.out.println("[ T ] Ver todos os produtos [ T ]");
-        System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
-        System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
-        System.out.println("[ 3 ]        SAIR           [ 3 ]\n");
+        System.out.println(Color.GREEN + "\t     TELA DO CLIENTE\n" + Color.RESET);
+        System.out.println("    [ C ]    Comprar Produto    [ C ]");
+        System.out.println("    [ T ] Ver todos os produtos [ T ]");
+        System.out.println("    [ P ]  Pesquisar pelo nome  [ P ]");
+        System.out.println("    [ V ] Voltar../ Tela Inicial[ V ]");
+        System.out.println("    [ 3 ]        "+ Color.RED + "SAIR" +  Color.RESET + "           [ 3 ]\n");
         cliente.opcao();
     }
 

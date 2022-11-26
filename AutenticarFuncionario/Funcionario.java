@@ -1,14 +1,16 @@
 package AutenticarFuncionario;
 import java.util.Scanner;
+
+import Base.Color;
 public class Funcionario{
     protected String usuario;
     protected String senha;
     
     Scanner login = new Scanner(System.in);
     public Funcionario(){
-        System.out.print("Usuario: ");
+        System.out.print(Color.YELLOW + "Usuario: " + Color.RESET);
         this.usuario = login.next();
-        System.out.print("Senha: ");
+        System.out.print(Color.YELLOW + "Senha: " + Color.RESET);
         this.senha = login.next();
     }
     
