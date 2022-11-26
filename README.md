@@ -26,15 +26,16 @@ Esse é nosso objetivo, vamos tentar ao maximo realizar todas as features com ba
 - [x] Tela Trabalhador
 - [x] Cadastrar Trabalhador
 - [x] Autenticar Trabalhador
-
-### Features Futuras
-
 - [x] Cadastro de cliente
 - [x] Cadastro de produtos
 - [x] Pesquisar de produtos
 - [x] ver todos os produtos
 - [x] Remoção de produtos
 - [x] Compra de produtos
+
+### Features Futuras
+- [ ] Status do cliente
+- [ ] Promoçẽos
 
 
 ### Demonstrações
