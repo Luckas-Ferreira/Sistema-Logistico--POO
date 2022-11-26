@@ -34,21 +34,25 @@ public abstract class Base{
 
         Boolean condicao = true;
         while(condicao){
-            
             System.out.println("\n==========================================\n");
             System.out.print("Escolha o que deseja: ");
             String decisao = input.nextLine().toUpperCase();
             System.out.println("\n==========================================\n");
             if (decisao.equals("C")){
                 removerComprar();
+                
             }else if (decisao.equals("R")){
                 removerComprar();
+                
             }else if (decisao.equals("A")){
                 adicionarProduto();
+                
             }else if (decisao.equals("T")){
                 verTodosProduto();
+                
             }else if (decisao.equals("P")){
                 pesquisarProtuto();
+                
             } else if (decisao.equals("V")){
                 voltar();
             } else if(decisao.equals("3")){

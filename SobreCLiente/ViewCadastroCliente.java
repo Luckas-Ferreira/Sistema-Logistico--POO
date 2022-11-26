@@ -23,7 +23,7 @@ public class ViewCadastroCliente extends TelaCliente{
         
         this.codigo = (int) (1 + Math.random() * 1000-1);
         
-        System.out.print("Dinheiro cliente: ");
+        System.out.print("Dinheiro cliente: R$");
         this.dinheiro = entrada.nextFloat();
         
         // Criar um objeto na classe

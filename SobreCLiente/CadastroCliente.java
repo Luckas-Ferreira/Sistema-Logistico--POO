@@ -7,6 +7,11 @@ public class CadastroCliente extends ViewCadastroCliente{
     
     // Lista de registro de clientes
     private ArrayList<Cliente> listaClientes = new ArrayList<>();
+    
+    private int index = -1;
+
+    
+
 
     // Padrão de projeto Singleton pattern
     private static CadastroCliente istance = null;
@@ -19,6 +24,7 @@ public class CadastroCliente extends ViewCadastroCliente{
 
     public void adicionarCliente(Cliente c){
         listaClientes.add(c);
+        index++;
     }
 
     // Mostra todos clientes registrados
@@ -32,10 +38,20 @@ public class CadastroCliente extends ViewCadastroCliente{
         return saida;
     }
 
+    public String serCliente(){
+        String saida = "";
+        saida += "\n======= Cliente Nº " + (index)+" =======\n";
+        saida += listaClientes.get(index).imprimir() + "\n";
+        
+        return saida;
+    }
+
     
     public ArrayList<Cliente> getListaClientes() {
         return listaClientes;
     }
 
-    
+    public int getIndex() {
+        return index;
+    }
 }

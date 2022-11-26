@@ -15,11 +15,11 @@ public class Produtos{
 
     public Produtos(){
         produtos.add(new Produto("Arroz", 2.5f, 3));
-        produtos.add(new Produto("Feijão", 2.5f, 5));
-        produtos.add(new Produto("Café", 2.5f, 7));
-        produtos.add(new Produto("Macarrão", 2.5f, 7));
+        produtos.add(new Produto("Feijao", 2.5f, 5));
+        produtos.add(new Produto("Cafe", 2.5f, 7));
+        produtos.add(new Produto("Macarrao", 2.5f, 7));
         produtos.add(new Produto("Cuscuz", 2.5f, 7));
-        produtos.add(new Produto("Açuca", 2.5f, 87));
+        produtos.add(new Produto("Tomate", 2.5f, 87));
         produtos.add(new Produto("Caviar fds", 10.000f, 87));
     }
     
@@ -50,9 +50,28 @@ public class Produtos{
         if(produto.getNome().toLowerCase().equals(comprarProduto.getNome())){
             if(produto.getQuantidade() > 0){
                 // Mandar para tela perguntando qual a forma de pagamento
-                cliente.mudarDinheiro(cliente.getDinheiro() - (produto.valor * comprarProduto.pegarQuantidade()));
+                System.out.println("Entrou no if de comprar");
+                // Fazer o desconto das compras no dinheiro do cliente
+                    //Criado uma variavel que ira receber o valor dinheiro do cliente atual que está na lista
+                Float dinheiro = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getDinheiro();
+                    // Criando Variavel descontoDinheiro para facilitar a leitura do codigo
+                Float descontoDinheiro = dinheiro - (produto.valor * comprarProduto.pegarQuantidade());
+                    // Fazendo atualização no dinheiro do cliente atual, após as compras realizadas
+                CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setDinheiro(descontoDinheiro);
+                // Registando o gasto do Cliente
+                    // Criado a variavel gasto, que ira pegar o quanto o cliente atual já gastou
+                Float gasto = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getGasto();
+                    // Criado variavel aumentGasto para facilitar na leitura do codigo
+                Float aumentoGasto = gasto;
+                    // Fazendo os calculos do gasto atual
+                aumentoGasto += (produto.valor * comprarProduto.pegarQuantidade());
+                    // Atualizando os gastos do cliente atual
+                CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setGasto(aumentoGasto);
+                    // Mostrando os Status do cliente
+                System.out.println(CadastroCliente.getInstance().serCliente());
+                
+                
                 produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.pegarQuantidade());
-        
                 if (produto.getQuantidade() == 0){
                     produtos.remove(produto);
                 }else if (produto.getQuantidade() < 0){
