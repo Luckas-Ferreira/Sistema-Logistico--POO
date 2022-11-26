@@ -75,8 +75,8 @@ public class Produtos{
                 if (produto.getQuantidade() == 0){
                     produtos.remove(produto);
                 }else if (produto.getQuantidade() < 0){
-                    produtos.remove(produto);
                     System.out.println("Quantidade invalida");
+                    produtos.remove(produto);
                     }
                 }
             // Sai do loop.
