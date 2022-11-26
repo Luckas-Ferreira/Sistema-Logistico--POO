@@ -20,6 +20,11 @@ Ao longo do periodo, conseguimos criar todas as features e implementar os quatro
 
 #
 
+### 🚧 Padrões de Projetos
+- Template Method
+- Strategy Pattern
+- Singleton
+- Decorator
 
 ### Features Concluidas
 - [x] Tela Inicial
