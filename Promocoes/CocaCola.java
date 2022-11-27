@@ -3,7 +3,7 @@ public class CocaCola implements Promocao{
 
 	@Override
 	public double informarPreco() {
-		return 1;
+		return 2.5;
 	}
 
 	@Override

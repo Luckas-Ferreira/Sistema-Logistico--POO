@@ -1,8 +1,8 @@
-public class Fanta implements Promocao {
+public class Fanta implements Promocao{
 
     @Override
     public double informarPreco() {
-        return 1;
+        return 2.5;
     }
 
     @Override

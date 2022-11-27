@@ -1,13 +1,13 @@
 
 public class Bis extends PromocaoDecorator {
-	public Bis(Promocao biscoito) {
-		super(biscoito);
+	public Bis(Promocao c) {
+		super(c);
 		// TODO Auto-generated constructor stub
 	}
-	
-	@Override
+
+    @Override
     public double informarPreco() { 
-        return super.informarPreco() + 5.0;
+        return super.informarPreco() + 0.5;
     }
 
     @Override

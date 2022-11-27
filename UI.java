@@ -1,19 +1,13 @@
 public class UI {
-    public void bebidas(){
+    public void opcoesPromocao(){
         System.out.println("\n\n==========================================\n");
         System.out.println("\tTELA DE PROMOÇÕES\n");
         System.out.println("Bebida + Biscoito apenas R$3,00 \n\n");
-        System.out.println("\tEscolha uma bebida");
-        System.out.println("[ CC ]    Coca Cola 500ml    [ CC ]");
-        System.out.println("[ FT ]      Fanta 500ml      [ FT ]");
+        
+        System.out.println("\tEscolha uma das opçoes: ");
+        System.out.println("[ 1 ]    Coca Cola 500ml + Biscoito - Bis    [ 1 ]");
+        System.out.println("[ 2 ]    Fanta 500ml     + Biscoito - Oreo   [ 2 ]");
+        System.out.println("[ 3 ]                Cancelar                [ 3 ]\n");
     }
 
-    public void biscoito(){
-        System.out.println("\n\n==========================================\n");
-        System.out.println("\tEscolha um biscoito");
-        System.out.println("[ PT ]  Biscoito - Passa Tempo  [ PT ]");
-        System.out.println("[ BI ]  Biscoito - Bis          [ BI ]");
-        System.out.println("[ OR ]  Biscoito - Oreo         [ OR ]");
-        System.out.println("[ 4 ]        Cancelar           [ 4 ]\n");
-    }
 }
