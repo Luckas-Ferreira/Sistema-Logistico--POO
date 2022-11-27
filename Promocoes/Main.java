@@ -5,8 +5,12 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
+		UI ui = new UI();
+		ui.bebidas();
+		
 		Promocao c = new CocaCola();
 		imprimirInfo(c);
+		ui.biscoito();
 		Promocao a = new Fanta();
 		
 		c = new PassaTempo(c);
