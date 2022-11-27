@@ -6,13 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Color",
-            "request": "launch",
-            "mainClass": "Base.Color",
-            "projectName": "Sistema-Logistico--POO_f4f1b88d"
-        },
-        {
-            "type": "java",
             "name": "Launch MainProduto",
             "request": "launch",
             "mainClass": "PRODUTO.MainProduto",

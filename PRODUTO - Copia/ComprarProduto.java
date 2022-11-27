@@ -2,17 +2,15 @@ package PRODUTO;
 
 import java.util.Scanner;
 
-import Base.Color;
-
 public class ComprarProduto {
     Scanner input = new Scanner(System.in);
     protected String nome;
     protected int quantidade;
     
     public ComprarProduto(){
-        System.out.print(Color.YELLOW + "Nome do produto: " + Color.RESET);
+        System.out.print("Nome do produto: ");
         this.nome = input.nextLine().toLowerCase();
-        System.out.print(Color.CYAN + "Deseja comprar quantos desse produto? " + Color.RESET);
+        System.out.print("Deseja comprar quantos desse produto? ");
         this.quantidade = input.nextInt();
     }
 

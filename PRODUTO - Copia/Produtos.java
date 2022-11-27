@@ -3,7 +3,6 @@ package PRODUTO;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Base.Color;
 import SobreCLiente.CadastroCliente;
 import SobreCLiente.Cliente;
 
@@ -35,14 +34,13 @@ public class Produtos{
 
     public void adicionarProduto(){
         System.out.println("\n\n==========================================");
-        System.out.print(Color.YELLOW + "Nome: " + Color.RESET);
+        System.out.print("Nome: ");
         String nome = input.nextLine();
-        System.out.print(Color.CYAN + "Qual sera o valor do produto? " + Color.RESET);
+        System.out.print("Qual sera o valor do produto? ");
         int valor = input.nextInt();
-        System.out.print(Color.CYAN + "Tera quantos diponiveis? " + Color.RESET);
+        System.out.print("Tera quantos diponiveis? ");
         int quantidade = input.nextInt();
         produtos.add(new Produto(nome, valor, quantidade));
-        System.out.println(Color.RED + "Adicionado com sucesso!" + Color.RESET);
     }
 
     public void comprarProduto(ComprarProduto comprarProduto){
@@ -77,8 +75,8 @@ public class Produtos{
                 if (produto.getQuantidade() == 0){
                     produtos.remove(produto);
                 }else if (produto.getQuantidade() < 0){
-                    System.out.println(Color.RED + "Quantidade invalida" + Color.RESET);
                     produtos.remove(produto);
+                    System.out.println("Quantidade invalida");
                     }
                 }
             // Sai do loop.
@@ -90,7 +88,7 @@ public class Produtos{
             Produto produto = produtos.get(i);
     
             if(produto.getNome().toLowerCase().equals(removerProduto.getNome())){
-                System.out.println(Color.RED + "Removido com sucesso!" + Color.RESET);
+                
                 produtos.remove(produto);
                 // Sai do loop.
                 break;
