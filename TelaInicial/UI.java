@@ -27,23 +27,24 @@ public class UI{
         cliente.cadastroCliente();
         System.out.println("\n\n==========================================\n");
         System.out.println("\tTELA DO CLIENTE\n");
-        System.out.println("[ C ]    Comprar Produto    [ C ]");
-        System.out.println("[ T ] Ver todos os produtos [ T ]");
-        System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
-        System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
-        System.out.println("[ 3 ]        SAIR           [ 3 ]\n");
+        System.out.println("[ C ]    Comprar Produto     [ C ]");
+        System.out.println("[ T ] Ver todos os produtos  [ T ]");
+        System.out.println("[ P ]  Pesquisar pelo nome   [ P ]");
+        System.out.println("[ V ] Voltar../ Tela Inicial [ V ]");
+        System.out.println("[ 3 ]        SAIR            [ 3 ]\n");
         cliente.opcao();
     }
 
     public void telaFuncionario(){
         System.out.println("\n\n==========================================\n");
         System.out.println("\tTELA DO FUNCIONARIO\n");
-        System.out.println("[ A ] Adicionar um produto  [ A ]");
-        System.out.println("[ R ]  Remover um produto   [ R ]");
-        System.out.println("[ T ] Ver todos os produtos [ T ]");
-        System.out.println("[ P ]  Pesquisar pelo nome  [ P ]");
-        System.out.println("[ V ] Voltar../ Tela Inicial[ V ]");
-        System.out.println("[ 3 ]        SAIR           [ 3 ]\n");
+        System.out.println("[ A ] Adicionar um produto   [ A ]");
+        System.out.println("[ R ]  Remover um produto    [ R ]");
+        System.out.println("[ T ] Ver todos os produtos  [ T ]");
+        System.out.println("[ P ]  Pesquisar pelo nome   [ P ]");
+        System.out.println("[ M ] Mostrar status cliente [ M ]");
+        System.out.println("[ V ] Voltar../ Tela Inicial [ V ]");
+        System.out.println("[ 3 ]        SAIR            [ 3 ]\n");
         funcionario.opcao();
         
     }

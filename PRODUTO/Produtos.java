@@ -47,41 +47,59 @@ public class Produtos{
         for(int i = 0; i < produtos.size(); i++){
             Produto produto = produtos.get(i);
 
-        if(produto.getNome().toLowerCase().equals(comprarProduto.getNome())){
-            if(produto.getQuantidade() > 0){
-                // Mandar para tela perguntando qual a forma de pagamento
-                System.out.println("Entrou no if de comprar");
+        if(produto.getNome().toLowerCase().equals(comprarProduto.getNome()) && produto.getQuantidade() > 0){
+            if(produto.getQuantidade() >= comprarProduto.pegarQuantidade()){
                 // Fazer o desconto das compras no dinheiro do cliente
                     //Criado uma variavel que ira receber o valor dinheiro do cliente atual que está na lista
                 Float dinheiro = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getDinheiro();
-                    // Criando Variavel descontoDinheiro para facilitar a leitura do codigo
-                Float descontoDinheiro = dinheiro - (produto.valor * comprarProduto.pegarQuantidade());
-                    // Fazendo atualização no dinheiro do cliente atual, após as compras realizadas
-                CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setDinheiro(descontoDinheiro);
-                // Registando o gasto do Cliente
+                    //Criado a variavel que recebera o custo do produto
+                Float custoProduto = produto.valor * comprarProduto.pegarQuantidade();
+                
+                // Verificando se o cliente tem dinheiro suficiente para realizar a compra
+                if (dinheiro >= custoProduto){
+                    
+                    //Realizando o calculo para o desconto no dinheiro atual do cliente
+                    Float descontoDinheiro = dinheiro - custoProduto;
+
+                // Fazendo atualização no dinheiro do cliente atual, após as compras realizadas
+                    CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setDinheiro(descontoDinheiro);
+                
+                  // Registando o gasto do Cliente
                     // Criado a variavel gasto, que ira pegar o quanto o cliente atual já gastou
-                Float gasto = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getGasto();
+                    Float gasto = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getGasto();
                     // Criado variavel aumentGasto para facilitar na leitura do codigo
-                Float aumentoGasto = gasto;
+                     Float aumentoGasto = gasto;
                     // Fazendo os calculos do gasto atual
-                aumentoGasto += (produto.valor * comprarProduto.pegarQuantidade());
-                    // Atualizando os gastos do cliente atual
-                CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setGasto(aumentoGasto);
+                    aumentoGasto += (produto.valor * comprarProduto.pegarQuantidade());
+                // Atualizando os gastos do cliente atual
+                    CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setGasto(aumentoGasto);
+                
                     // Mostrando os Status do cliente
-                System.out.println(CadastroCliente.getInstance().serCliente());
-                
-                
-                produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.pegarQuantidade());
-                if (produto.getQuantidade() == 0){
-                    produtos.remove(produto);
-                }else if (produto.getQuantidade() < 0){
-                    produtos.remove(produto);
-                    System.out.println("Quantidade invalida");
+                    System.out.println(CadastroCliente.getInstance().serCliente());
+
+                //Realizando atualização nos produtos do mercado
+                    produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.pegarQuantidade());
+                    if (produto.getQuantidade() == 0){
+                        produtos.remove(produto);
+                        break;
                     }
+                }else{
+                    System.out.println("\n------------------------------------------\nDinheiro insuficiente para realizar a compra.");
+                    break;
                 }
-            // Sai do loop.
+                
+            }else{
+                System.out.println("\n------------------------------------------\nQuantidade invalida");
+                break;
+            }
+            
+        // }else if (!(produto.getNome().toLowerCase().equals(comprarProduto.getNome()))){                    
+        //     System.out.println("\n------------------------------------------\n\tProduto indisponivel no mercado.\n     Visualise os produtos usando a opção:[T]");
+        //     break;
+        }else{
             break;
-        }}
+        }
+        }
     }
     public void removerProduto(RemoverProduto removerProduto){
         for(int i = 0; i < produtos.size(); i++){

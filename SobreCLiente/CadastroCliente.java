@@ -38,9 +38,20 @@ public class CadastroCliente extends ViewCadastroCliente{
         return saida;
     }
 
+    public String gastoTotal(){
+        double gastoTotal = 0;
+        String saidaGasto = "";
+        for (int c = 0; c<listaClientes.size(); c++){
+            gastoTotal += listaClientes.get(c).getGasto();
+        }
+        saidaGasto = "\n------------------------------------------\nTotal de compras realizadas: R$"+ gastoTotal;
+        return saidaGasto;
+    }
+
     public String serCliente(){
         String saida = "";
-        saida += "\n======= Cliente Nº " + (index)+" =======\n";
+        int i = index + 1;
+        saida += "\n======= Cliente Nº " + (i++)+" =======\n";
         saida += listaClientes.get(index).imprimir() + "\n";
         
         return saida;
