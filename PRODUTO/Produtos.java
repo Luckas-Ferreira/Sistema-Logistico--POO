@@ -92,11 +92,6 @@ public class Produtos{
                 System.out.println("\n------------------------------------------\nQuantidade invalida");
                 break;
             }
-            
-        // }else if (!(produto.getNome().toLowerCase().equals(comprarProduto.getNome()))){                    
-        //     System.out.println("\n------------------------------------------\n\tProduto indisponivel no mercado.\n     Visualise os produtos usando a opção:[T]");
-        //     break;
-        }else{
             break;
         }
         }
