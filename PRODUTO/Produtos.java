@@ -47,11 +47,11 @@ public class Produtos{
         for(int i = 0; i < produtos.size(); i++){
             Produto produto = produtos.get(i);
 
-        if(produto.getNome().toLowerCase().equals(comprarProduto.getNome()) && produto.getQuantidade() > 0){
-            if(produto.getQuantidade() >= comprarProduto.pegarQuantidade()){
+        if(produto.mostrarNome().toLowerCase().equals(comprarProduto.mostrarNome()) && produto.mostrarQuantidade() > 0){
+            if(produto.mostrarQuantidade() >= comprarProduto.pegarQuantidade()){
                 // Fazer o desconto das compras no dinheiro do cliente
                     //Criado uma variavel que ira receber o valor dinheiro do cliente atual que está na lista
-                Float dinheiro = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getDinheiro();
+                Float dinheiro = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).mostrarDinheiro();
                     //Criado a variavel que recebera o custo do produto
                 Float custoProduto = produto.valor * comprarProduto.pegarQuantidade();
                 
@@ -62,24 +62,24 @@ public class Produtos{
                     Float descontoDinheiro = dinheiro - custoProduto;
 
                 // Fazendo atualização no dinheiro do cliente atual, após as compras realizadas
-                    CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setDinheiro(descontoDinheiro);
+                    CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarDinheiro(descontoDinheiro);
                 
                   // Registando o gasto do Cliente
                     // Criado a variavel gasto, que ira pegar o quanto o cliente atual já gastou
-                    Float gasto = CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).getGasto();
+                    Float gasto = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).valorGasto();
                     // Criado variavel aumentGasto para facilitar na leitura do codigo
                      Float aumentoGasto = gasto;
                     // Fazendo os calculos do gasto atual
                     aumentoGasto += (produto.valor * comprarProduto.pegarQuantidade());
                 // Atualizando os gastos do cliente atual
-                    CadastroCliente.getInstance().getListaClientes().get(CadastroCliente.getInstance().getIndex()).setGasto(aumentoGasto);
+                    CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarGasto(aumentoGasto);
                 
                     // Mostrando os Status do cliente
-                    System.out.println(CadastroCliente.getInstance().serCliente());
+                    System.out.println(CadastroCliente.getInstance().umCliente());
 
                 //Realizando atualização nos produtos do mercado
-                    produto.mudarQuantidade(produto.getQuantidade() - comprarProduto.pegarQuantidade());
-                    if (produto.getQuantidade() == 0){
+                    produto.alterarQuantidade(produto.mostrarQuantidade() - comprarProduto.pegarQuantidade());
+                    if (produto.mostrarQuantidade() == 0){
                         produtos.remove(produto);
                         break;
                     }
@@ -100,7 +100,7 @@ public class Produtos{
         for(int i = 0; i < produtos.size(); i++){
             Produto produto = produtos.get(i);
     
-            if(produto.getNome().toLowerCase().equals(removerProduto.getNome())){
+            if(produto.mostrarNome().toLowerCase().equals(removerProduto.mostrarNomeR())){
                 
                 produtos.remove(produto);
                 // Sai do loop.
@@ -110,7 +110,7 @@ public class Produtos{
     }
     public void pesquisarProduto(PesquisarProduto pesquisarProduto){
         for (Produto produto: produtos){ //Chamada Enhanced for-loop para percorrer toda a lista.
-            if(produto.getNome().toLowerCase().equals(pesquisarProduto.getNome().toLowerCase())){
+            if(produto.mostrarNome().toLowerCase().equals(pesquisarProduto.mostrarNomeP().toLowerCase())){
                 System.out.println(produto);
             }
         }

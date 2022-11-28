@@ -14,7 +14,7 @@ public class ComprarProduto {
         this.quantidade = input.nextInt();
     }
 
-    public String getNome() {
+    public String mostrarNome() {
         return nome;
     }
     public int pegarQuantidade(){

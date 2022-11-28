@@ -20,30 +20,30 @@ public class Cliente extends CadastroCliente{
     }
 
     // Metodos de acesso
-    public String getNome() {
+    public String valorNome() {
         return nome;
     }
-    public void setNome(String nome) {
+    public void mostrarNome(String nome) {
         this.nome = nome;
     }
-    public int getCodigo() {
+    public int mostrarCodigo() {
         return codigo;
     }
-    public void setCodigo(int codigo) {
+    public void alterarCodigo(int codigo) {
         this.codigo = codigo;
     }
-    public float getDinheiro() {
+    public float mostrarDinheiro() {
         return dinheiro;
     }
-    public void setDinheiro(float dinheiro) {
+    public void alterarDinheiro(float dinheiro) {
         this.dinheiro = dinheiro;
     }
 
-    public float getGasto() {
+    public float valorGasto() {
         return gasto;
     }
 
-    public void setGasto(float gasto) {
+    public void alterarGasto(float gasto) {
         this.gasto = gasto;
     }
 

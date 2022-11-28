@@ -12,16 +12,16 @@ public class Funcionario{
         this.senha = login.next();
     }
     
-    public String getSenha() {
+    public String mostrarSenha() {
         return senha;
     }
-    public String getUsuario(){
+    public String mostrarUsuario(){
         return usuario;
     }
-    public void setSenha(String senha) {
+    public void alterarSenha(String senha) {
         this.senha = senha;
     }
-    public void setUsuario(String usuario){
+    public void alterarUsuario(String usuario){
         this.usuario = usuario;
     }
     @Override

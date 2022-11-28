@@ -11,7 +11,7 @@ public class RemoverProduto {
         this.nome = input.nextLine().toLowerCase();
     }
 
-    public String getNome() {
+    public String mostrarNomeR() {
         return nome;
     }
 }
