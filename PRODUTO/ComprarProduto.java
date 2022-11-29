@@ -17,7 +17,7 @@ public class ComprarProduto {
     public String mostrarNome() {
         return nome;
     }
-    public int pegarQuantidade(){
+    public int mostrarQuantidade(){
         return quantidade;
     }
 }

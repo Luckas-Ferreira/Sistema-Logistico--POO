@@ -2,6 +2,7 @@ package PRODUTO;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Iterator;
 
 import SobreCLiente.CadastroCliente;
 import SobreCLiente.Cliente;
@@ -14,13 +15,12 @@ public class Produtos{
     Produto produto = new Produto();
 
     public Produtos(){
-        produtos.add(new Produto("Arroz", 2.5f, 3));
-        produtos.add(new Produto("Feijao", 2.5f, 5));
-        produtos.add(new Produto("Cafe", 2.5f, 7));
-        produtos.add(new Produto("Macarrao", 2.5f, 7));
-        produtos.add(new Produto("Cuscuz", 2.5f, 7));
-        produtos.add(new Produto("Tomate", 2.5f, 87));
-        produtos.add(new Produto("Caviar fds", 10.000f, 87));
+        produtos.add(new Produto("arroz", 2.5f, 3));
+        produtos.add(new Produto("feijao", 2.5f, 5));
+        produtos.add(new Produto("cafe", 2.5f, 7));
+        produtos.add(new Produto("macarrao", 2.5f, 7));
+        produtos.add(new Produto("cuscuz", 2.5f, 7));
+        produtos.add(new Produto("tomate", 2.5f, 87));
     }
     
     // Padrão de projeto Singleton pattern
@@ -31,7 +31,7 @@ public class Produtos{
         }
         return istance;
     }
-
+    
     public void adicionarProduto(){
         System.out.println("\n\n==========================================");
         System.out.print("Nome: ");
@@ -48,12 +48,12 @@ public class Produtos{
             Produto produto = produtos.get(i);
 
         if(produto.mostrarNome().toLowerCase().equals(comprarProduto.mostrarNome()) && produto.mostrarQuantidade() > 0){
-            if(produto.mostrarQuantidade() >= comprarProduto.pegarQuantidade()){
+            if(produto.mostrarQuantidade() >= comprarProduto.mostrarQuantidade()){
                 // Fazer o desconto das compras no dinheiro do cliente
                     //Criado uma variavel que ira receber o valor dinheiro do cliente atual que está na lista
                 Float dinheiro = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).mostrarDinheiro();
                     //Criado a variavel que recebera o custo do produto
-                Float custoProduto = produto.valor * comprarProduto.pegarQuantidade();
+                Float custoProduto = produto.valor * comprarProduto.mostrarQuantidade();
                 
                 // Verificando se o cliente tem dinheiro suficiente para realizar a compra
                 if (dinheiro >= custoProduto){
@@ -70,7 +70,7 @@ public class Produtos{
                     // Criado variavel aumentGasto para facilitar na leitura do codigo
                      Float aumentoGasto = gasto;
                     // Fazendo os calculos do gasto atual
-                    aumentoGasto += (produto.valor * comprarProduto.pegarQuantidade());
+                    aumentoGasto += custoProduto;
                 // Atualizando os gastos do cliente atual
                     CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarGasto(aumentoGasto);
                 
@@ -78,7 +78,7 @@ public class Produtos{
                     System.out.println(CadastroCliente.getInstance().umCliente());
 
                 //Realizando atualização nos produtos do mercado
-                    produto.alterarQuantidade(produto.mostrarQuantidade() - comprarProduto.pegarQuantidade());
+                    produto.alterarQuantidade(produto.mostrarQuantidade() - comprarProduto.mostrarQuantidade());
                     if (produto.mostrarQuantidade() == 0){
                         produtos.remove(produto);
                         break;
