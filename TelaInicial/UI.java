@@ -33,6 +33,8 @@ public class UI{
         System.out.println("[ V ] Voltar../ Tela Inicial [ V ]");
         System.out.println("[ 3 ]        SAIR            [ 3 ]\n");
         cliente.opcao();
+        System.out.println("Pc do lucas é mais bugado que o meu");
+
     }
 
     public void telaFuncionario(){
@@ -46,6 +48,8 @@ public class UI{
         System.out.println("[ V ] Voltar../ Tela Inicial [ V ]");
         System.out.println("[ 3 ]        SAIR            [ 3 ]\n");
         funcionario.opcao();
+        System.out.println("Pc do lucas é mais bugado que o meu");
+
         
     }
 }
