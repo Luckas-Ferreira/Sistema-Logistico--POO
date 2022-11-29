@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 public abstract class Base{
     
     public abstract void adicionarProduto();
