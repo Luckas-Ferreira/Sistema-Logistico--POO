@@ -2,17 +2,14 @@ package PRODUTO;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Iterator;
 
 import SobreCLiente.CadastroCliente;
-import SobreCLiente.Cliente;
+
 
 public class Produtos{
     ArrayList<Produto> produtos = new ArrayList<>();
     Scanner input = new Scanner(System.in);
-    
-    Cliente cliente = new Cliente();
-    Produto produto = new Produto();
+
 
     public Produtos(){
         produtos.add(new Produto("arroz", 2.5f, 3));
@@ -47,53 +44,53 @@ public class Produtos{
         for(int i = 0; i < produtos.size(); i++){
             Produto produto = produtos.get(i);
 
-        if(produto.mostrarNome().toLowerCase().equals(comprarProduto.mostrarNome()) && produto.mostrarQuantidade() > 0){
-            if(produto.mostrarQuantidade() >= comprarProduto.mostrarQuantidade()){
-                // Fazer o desconto das compras no dinheiro do cliente
-                    //Criado uma variavel que ira receber o valor dinheiro do cliente atual que está na lista
-                Float dinheiro = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).mostrarDinheiro();
-                    //Criado a variavel que recebera o custo do produto
-                Float custoProduto = produto.valor * comprarProduto.mostrarQuantidade();
-                
-                // Verificando se o cliente tem dinheiro suficiente para realizar a compra
-                if (dinheiro >= custoProduto){
+            if(produto.mostrarNome().toLowerCase().equals(comprarProduto.mostrarNome()) && produto.mostrarQuantidade() > 0){
+                if(produto.mostrarQuantidade() >= comprarProduto.mostrarQuantidade()){
+                    // Fazer o desconto das compras no dinheiro do cliente
+                        //Criado uma variavel que ira receber o valor dinheiro do cliente atual que está na lista
+                    Float dinheiro = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).mostrarDinheiro();
+                        //Criado a variavel que recebera o custo do produto
+                    Float custoProduto = produto.valor * comprarProduto.mostrarQuantidade();
                     
-                    //Realizando o calculo para o desconto no dinheiro atual do cliente
-                    Float descontoDinheiro = dinheiro - custoProduto;
+                    // Verificando se o cliente tem dinheiro suficiente para realizar a compra
+                    if (dinheiro >= custoProduto){
+                        
+                        //Realizando o calculo para o desconto no dinheiro atual do cliente
+                        Float descontoDinheiro = dinheiro - custoProduto;
 
-                // Fazendo atualização no dinheiro do cliente atual, após as compras realizadas
-                    CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarDinheiro(descontoDinheiro);
-                
-                  // Registando o gasto do Cliente
-                    // Criado a variavel gasto, que ira pegar o quanto o cliente atual já gastou
-                    Float gasto = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).valorGasto();
-                    // Criado variavel aumentGasto para facilitar na leitura do codigo
-                     Float aumentoGasto = gasto;
-                    // Fazendo os calculos do gasto atual
-                    aumentoGasto += custoProduto;
-                // Atualizando os gastos do cliente atual
-                    CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarGasto(aumentoGasto);
-                
-                    // Mostrando os Status do cliente
-                    System.out.println(CadastroCliente.getInstance().umCliente());
+                    // Fazendo atualização no dinheiro do cliente atual, após as compras realizadas
+                        CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarDinheiro(descontoDinheiro);
+                    
+                    // Registando o gasto do Cliente
+                        // Criado a variavel gasto, que ira pegar o quanto o cliente atual já gastou
+                        Float gasto = CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).valorGasto();
+                        // Criado variavel aumentGasto para facilitar na leitura do codigo
+                        Float aumentoGasto = gasto;
+                        // Fazendo os calculos do gasto atual
+                        aumentoGasto += custoProduto;
+                    // Atualizando os gastos do cliente atual
+                        CadastroCliente.getInstance().trazerListaClientes().get(CadastroCliente.getInstance().Index()).alterarGasto(aumentoGasto);
+                    
+                        // Mostrando os Status do cliente
+                        System.out.println(CadastroCliente.getInstance().umCliente());
 
-                //Realizando atualização nos produtos do mercado
-                    produto.alterarQuantidade(produto.mostrarQuantidade() - comprarProduto.mostrarQuantidade());
-                    if (produto.mostrarQuantidade() == 0){
-                        produtos.remove(produto);
+                    //Realizando atualização nos produtos do mercado
+                        produto.alterarQuantidade(produto.mostrarQuantidade() - comprarProduto.mostrarQuantidade());
+                        if (produto.mostrarQuantidade() == 0){
+                            produtos.remove(produto);
+                            break;
+                        }
+                    }else{
+                        System.out.println("\n------------------------------------------\nDinheiro insuficiente para realizar a compra.");
                         break;
                     }
+                    
                 }else{
-                    System.out.println("\n------------------------------------------\nDinheiro insuficiente para realizar a compra.");
+                    System.out.println("\n------------------------------------------\nQuantidade invalida");
                     break;
                 }
-                
-            }else{
-                System.out.println("\n------------------------------------------\nQuantidade invalida");
                 break;
             }
-            break;
-        }
         }
     }
     public void removerProduto(RemoverProduto removerProduto){
