@@ -33,6 +33,6 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto: " + nome + ", valor: " + valor + ", quantidade: " + quantidade;
+        return "Produto: " + nome + String.format(", valor: R$%.2f", valor) + ", quantidade: " + quantidade;
     }
 }

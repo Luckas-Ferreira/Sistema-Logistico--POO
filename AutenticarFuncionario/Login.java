@@ -10,7 +10,7 @@ public class Login implements Autenticador{
     @Override
     public void verificar(Funcionario funcionario) {
         if (loginPadrao.mostrarUsuario().equals(funcionario.mostrarUsuario()) && loginPadrao.mostrarSenha().equals(funcionario.mostrarSenha())){
-            System.out.println("Entrando no sistema");
+            System.out.println("\n--------------------\nEntrando no sistema");
             UI tela = new UI();
             tela.telaFuncionario();
         }else {
@@ -25,8 +25,8 @@ public class Login implements Autenticador{
                     String usuario2 = resposta.next();
                     System.out.print("Nova Senha: ");
                     String senha2 = resposta.next();
-                    System.out.println("Novo login cadastrado!");
-                    System.out.print("Usuário: ");
+                    System.out.println("\nNovo login cadastrado!");
+                    System.out.print("\nUsuário: ");
                     String novo_user = resposta.next();
                     System.out.print("Senha: ");
                     String nova_password = resposta.next();

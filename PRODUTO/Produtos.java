@@ -101,7 +101,7 @@ public class Produtos{
             Produto produto = produtos.get(i);
     
             if(produto.mostrarNome().toLowerCase().equals(removerProduto.mostrarNomeR())){
-                
+                System.out.println("Removido com sucesso!");
                 produtos.remove(produto);
                 // Sai do loop.
                 break;

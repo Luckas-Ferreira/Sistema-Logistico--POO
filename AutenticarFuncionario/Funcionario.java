@@ -6,7 +6,7 @@ public class Funcionario{
     
     Scanner login = new Scanner(System.in);
     public Funcionario(){
-        System.out.print("Usuario: ");
+        System.out.print("\nUsuario: ");
         this.usuario = login.next();
         System.out.print("Senha: ");
         this.senha = login.next();
