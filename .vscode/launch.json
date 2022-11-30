@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Teste",
+            "request": "launch",
+            "mainClass": "PRODUTO.Teste",
+            "projectName": "Sistema-Logistico--POO_f4f1b88d"
+        },
+        {
+            "type": "java",
             "name": "Launch TEste",
             "request": "launch",
             "mainClass": "PRODUTO.TEste",
