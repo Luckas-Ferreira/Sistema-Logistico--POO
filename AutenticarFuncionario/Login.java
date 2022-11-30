@@ -4,7 +4,7 @@ import TelaInicial.UI;
 
 public class Login implements Autenticador{
     Scanner resposta = new Scanner(System.in);
-    LoginPadrao loginPadrao = new LoginPadrao();
+    private LoginPadrao loginPadrao = new LoginPadrao();
     
     
     @Override

@@ -11,6 +11,7 @@ public class Produtos{
     Scanner input = new Scanner(System.in);
 
 
+
     public Produtos(){
         produtos.add(new Produto("arroz", 2.5f, 3));
         produtos.add(new Produto("feijao", 2.5f, 5));

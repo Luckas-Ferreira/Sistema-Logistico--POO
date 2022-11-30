@@ -7,7 +7,6 @@ public class CadastroCliente extends ViewCadastroCliente{
     
     // Lista de registro de clientes
     private ArrayList<Cliente> listaClientes = new ArrayList<>();
-    
     private int index = -1;
 
     

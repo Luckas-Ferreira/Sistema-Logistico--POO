@@ -8,9 +8,9 @@ import SobreCLiente.CadastroCliente;
 
 public class UI{
     
-    TelaFuncionario funcionario = new TelaFuncionario();
-    Iniciar iniciar = new Iniciar();
-    CadastroCliente cliente = new CadastroCliente();
+    private TelaFuncionario funcionario = new TelaFuncionario();
+    private Iniciar iniciar = new Iniciar();
+    private CadastroCliente cliente = new CadastroCliente();
     
 
     
