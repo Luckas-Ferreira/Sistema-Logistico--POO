@@ -1,7 +1,7 @@
 package SobreCLiente;
 
 
-public class Cliente extends CadastroCliente{
+public class Cliente{
     // Atributos
     private String nome;
     private int codigo;
