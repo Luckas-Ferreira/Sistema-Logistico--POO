@@ -2,9 +2,8 @@ package SobreCLiente;
 
 import java.util.Scanner;
 
-import Base.TelaCliente;
 
-public class ViewCadastroCliente extends TelaCliente{
+public class ViewCadastroCliente{
     // Atributos
     private String nome;
     private int codigo; 

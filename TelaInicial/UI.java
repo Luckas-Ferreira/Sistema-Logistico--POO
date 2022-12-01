@@ -3,6 +3,7 @@ package TelaInicial;
 
 import Base.TelaFuncionario;
 import Base.Iniciar;
+import Base.TelaCliente;
 import SobreCLiente.CadastroCliente;
 
 
@@ -10,7 +11,7 @@ public class UI{
     
     private TelaFuncionario funcionario = new TelaFuncionario();
     private Iniciar iniciar = new Iniciar();
-    private CadastroCliente cliente = new CadastroCliente();
+    private TelaCliente cliente = new TelaCliente();
     
 
     
@@ -24,7 +25,7 @@ public class UI{
         iniciar.opcao();
     }
     public void telaCliente(){
-        cliente.cadastroCliente();
+        CadastroCliente.getInstance().cadastroCliente();
         System.out.println("\n\n==========================================\n");
         System.out.println("\t     TELA DO CLIENTE\n");
         System.out.println("    [ C ]    Comprar Produto     [ C ]");
