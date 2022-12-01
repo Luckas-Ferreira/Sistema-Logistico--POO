@@ -1,9 +1,8 @@
 <h1 align="center"> Sistema Logístico - POO </h1>
 
-<p align="center">O objetivo principal é conseguir simular um sistema logístico simples utilizando programação orientada a objetos com a linguagem java.
-Nosso objetivo é simular compras, pesquisa de itens, criar e autorizar logins, adicionar e remover produtos.
-
-Ao longo do periodo, conseguimos criar todas as features e implementar os quatro design patterns propostos, os quais são: strategy, template method, singleton e  decorator.
+<p align="center">O objetivo principal é conseguir simular um sistema logístico simples utilizando programação orientada a obejetos com a linguagem java.
+Nosso obejetivo é simular compras,pesquisa de itens, criar e autorizar logins, adcionar e remover produtos.
+Esse é nosso objetivo, vamos tentar ao maximo realizar todas as features com base em 4 modelos de projetos, que ainda falta definir onde cada um irar se encaixar.
 </p>
 
 
@@ -20,11 +19,6 @@ Ao longo do periodo, conseguimos criar todas as features e implementar os quatro
 
 #
 
-### 🚧 Padrões de Projetos
-- Template Method
-- Strategy Pattern
-- Singleton
-- Decorator
 
 ### Features Concluidas
 - [x] Tela Inicial
@@ -32,16 +26,15 @@ Ao longo do periodo, conseguimos criar todas as features e implementar os quatro
 - [x] Tela Trabalhador
 - [x] Cadastrar Trabalhador
 - [x] Autenticar Trabalhador
+
+### Features Futuras
+
 - [x] Cadastro de cliente
 - [x] Cadastro de produtos
 - [x] Pesquisar de produtos
 - [x] ver todos os produtos
 - [x] Remoção de produtos
 - [x] Compra de produtos
-
-
-- [x] Status do cliente
-
 
 
 ### Demonstrações
@@ -68,9 +61,12 @@ $ cd Sistema-Logistico--POO
 $ code .
 
 # Execulte o arquivo
-$ MainTela.java
+$ Main.java
 ```
 #
+### UML
+
+<img src="https://github.com/Luckas-Ferreira/Sistema-Logistico--POO/blob/develop/Image/POO%20Projeto.png?raw=true" alt="">
 
 ### 🛠 Tecnologia
 
@@ -82,17 +78,5 @@ A seguinte ferramenta foi usada na construção do projeto:
 ---
 
 <a href="https://github.com/Luckas-Ferreira">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107446934?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Luckas Ferreira</b></sub></a> <a href="https://github.com/Luckas-Ferreira" title="Sistema Logístico - POO">🚀</a>
 
-<a href="https://instagram.com/luckas_.ferreira" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  
- <br />
 
-<a href="https://github.com/Douglas-Alv3s">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112776295?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Douglas</b></sub></a> <a href="https://github.com/Douglas-Alv3s" title="Sistema Logístico - POO">🚀</a>
-
-<a href="https://instagram.com/douglasytb" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
