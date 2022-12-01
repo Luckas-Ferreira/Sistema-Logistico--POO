@@ -13,12 +13,6 @@ public class TelaCliente extends Base{
     @Override
     public void adicionarProduto() {
     }
-    @Override
-    public void telaCliente() {
-    }
-    @Override
-    public void telaFuncionario() {  
-    }
 }
     
     

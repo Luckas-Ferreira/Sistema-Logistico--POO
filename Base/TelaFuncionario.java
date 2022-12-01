@@ -17,13 +17,5 @@ public class TelaFuncionario extends Base{
     public void removerComprar() {
         
         Produtos.getInstance().removerProduto(new RemoverProduto()); 
-    }
-
-
-    @Override
-    public void telaCliente() {  
-    }
-    @Override
-    public void telaFuncionario() {    
-    }    
+    } 
 }

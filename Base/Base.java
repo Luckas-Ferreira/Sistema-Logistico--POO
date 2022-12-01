@@ -11,9 +11,7 @@ public abstract class Base{
     
     public abstract void adicionarProduto();
     public abstract void removerComprar();
-    public abstract void telaCliente();
-    public abstract void telaFuncionario();
-
+    
     public void verTodosProduto(){
         Produtos.getInstance().VerProdutos();
     }
