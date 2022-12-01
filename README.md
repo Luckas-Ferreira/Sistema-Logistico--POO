@@ -69,7 +69,7 @@ $ MainTela.java
 #
 ### UML
 
-<img src="https://github.com/Luckas-Ferreira/Sistema-Logistico--POO/blob/develop/Image/POO%20Projeto.png?raw=true" alt="">
+<img src="https://github.com/Luckas-Ferreira/Sistema-Logistico--POO/blob/main/Image/POO%20Projeto.png" alt="">
 
 ### 🛠 Tecnologia
 
