@@ -3,6 +3,8 @@ package PRODUTO;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import java.util.Iterator;
+
 import SobreCLiente.CadastroCliente;
 
 
@@ -116,9 +118,11 @@ public class Produtos{
             
     }
     public void VerProdutos(){
-        for (Produto produto: produtos){ //Chamada Enhanced for-loop para percorrer toda a lista.
-            System.out.println(produto);
+        Iterator<Produto> it = produtos.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
         }
+        
     }
 
 }
