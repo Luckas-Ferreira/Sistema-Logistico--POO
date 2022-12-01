@@ -54,7 +54,7 @@ public abstract class Base{
             }else if (decisao.equals("P")){
                 pesquisarProtuto();
             }else if(decisao.equals("M")){
-                System.out.println("=============== Relatorio do mercado ===============");
+                System.out.println("========== Relatorio do mercado ==========");
                 System.out.println(CadastroCliente.getInstance().listarClientes());
                 System.out.println(CadastroCliente.getInstance().gastoTotal());
             } else if (decisao.equals("V")){
