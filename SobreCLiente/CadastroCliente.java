@@ -9,9 +9,6 @@ public class CadastroCliente extends ViewCadastroCliente{
     private ArrayList<Cliente> listaClientes = new ArrayList<>();
     private int index = -1;
 
-    
-
-
     // Padrão de projeto Singleton pattern
     private static CadastroCliente istance = null;
     static public CadastroCliente getInstance(){
