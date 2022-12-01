@@ -37,11 +37,6 @@ Esse é nosso objetivo, vamos tentar ao maximo realizar todas as features com ba
 - [x] Compra de produtos
 
 
-### Demonstrações
-<h1 align="center">
-  Em Breve!
-</h1>
-
 ### Pré-requisitos
 
 -Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
