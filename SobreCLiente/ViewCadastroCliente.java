@@ -17,13 +17,13 @@ public class ViewCadastroCliente extends TelaCliente{
     public void cadastroCliente(){
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("\t==== Entrando cliente ====\n");
+        System.out.println("\n============ Entrando cliente ============\n");
         System.out.print("Nome do cliente: ");
         this.nome = entrada.nextLine();
         
         this.codigo = (int) (1 + Math.random() * 1000-1);
         
-        System.out.print("Dinheiro cliente: ");
+        System.out.print("Dinheiro do cliente: R$");
         this.dinheiro = entrada.nextFloat();
         
         // Criar um objeto na classe

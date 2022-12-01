@@ -24,7 +24,7 @@ public class Iniciar{
     public void opcao(){
         Scanner input = new Scanner(System.in);
         while(true){
-            System.out.println("\n==========================================\n");
+            System.out.println("==========================================");
             System.out.print("Escolha o que deseja: ");
             String decisao = input.nextLine().toUpperCase();
             if (decisao.equals("1")){

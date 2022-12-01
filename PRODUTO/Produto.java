@@ -15,24 +15,24 @@ public class Produto {
     }
     
 
-    public String getNome() {
+    public String mostrarNome() {
         return nome;
     }
 
 
-    public float getValor() {
+    public float mostrarValor() {
         return valor;
     }
 
-    public int getQuantidade(){
+    public int mostrarQuantidade(){
         return quantidade;
     }
-    public void mudarQuantidade(int quantidade){
+    public void alterarQuantidade(int quantidade){
         this.quantidade = quantidade;
     }
 
     @Override
     public String toString() {
-        return "Produto: " + nome + ", valor: " + valor + ", quantidade: " + quantidade;
+        return "Produto: " + nome + String.format(", valor: R$%.2f", valor) + ", quantidade: " + quantidade;
     }
 }

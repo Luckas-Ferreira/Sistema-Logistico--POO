@@ -11,7 +11,7 @@ public class PesquisarProduto{
         this.nome = input.nextLine().toLowerCase();
     }
 
-    public String getNome() {
+    public String mostrarNomeP() {
         return nome;
     }
 
