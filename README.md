@@ -39,9 +39,9 @@ Ao longo do periodo, conseguimos criar todas as features e implementar os quatro
 - [x] Remoção de produtos
 - [x] Compra de produtos
 
-### Features Futuras
-- [ ] Status do cliente
-- [ ] Promoçẽos
+
+- [x] Status do cliente
+
 
 
 ### Demonstrações
